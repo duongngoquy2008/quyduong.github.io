@@ -1,1 +1,79 @@
+/* --- PHẦN ĐỊNH DẠNG CHUNG --- */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
 
+/* --- PHẦN HEADER (BANNER MÀU XANH) --- */
+header {
+  text-align: center; /* Đưa chữ ra giữa */
+  padding: 60px 20px 30px;
+  /* Sử dụng màu xanh gradient cho header */
+  background: linear-gradient(135deg, #0078d7, #00b4d8); 
+  color: white; /* Đảm bảo chữ màu trắng trên nền xanh */
+}
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+/* --- PHẦN NAVIGATOR (MÀU ĐỎ) --- */
+nav {
+    background-color: #dc3545; /* Màu nền đỏ */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav a {
+    color: white; /* Màu chữ trắng trên nền đỏ */
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+/* HIỆU ỨNG HOVER CHO NAV (Màu đỏ sáng hơn khi di chuột) */
+nav a:hover {
+    color: #dc3545; /* Đổi màu chữ sang đỏ */
+    background-color: #f8d7da; /* Đổi màu nền nhạt (hồng nhạt) */
+    border-radius: 4px;
+}
+
+/* --- PHẦN CÒN LẠI (GIỮ NGUYÊN) --- */
+section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+h2 {
+  border-left: 4px solid #0078d7; /* Giữ đường viền xanh cho tiêu đề */
+  padding-left: 10px;
+  color: #0078d7;
+}
+ul {
+  line-height: 1.8em;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #eee;
+  color: #555;
+  font-size: 0.9em;
+}
+/* Hiệu ứng hover cho các liên kết chung */
+a {
+  color: #0078d7;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
