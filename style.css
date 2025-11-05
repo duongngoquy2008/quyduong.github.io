@@ -143,68 +143,37 @@ a:hover {
 }
 
 /* ----------------------------------- */
-/* --- ĐỊNH DẠNG CHÂM NGÔN SỐNG (CẬP NHẬT) --- */
+/* --- ĐỊNH DẠNG CHÂM NGÔN SỐNG (CHỈNH KÍCH THƯỚC) --- */
 /* ----------------------------------- */
 .quote-container {
     text-align: center;
-    margin: 80px auto; /* Tăng khoảng cách trên dưới để nổi bật hơn */
-    padding: 0 10px; /* Giảm padding ngang để chữ có nhiều không gian hơn */
-    max-width: 1000px; /* Tăng chiều rộng tối đa của khối chứa */
+    margin: 80px auto;
+    padding: 0 10px; 
+    max-width: 900px; /* Giảm max-width để câu châm ngôn cân đối hơn */
 }
 
 .life-quote {
-    font-family: 'Georgia', serif; /* Đổi sang font Georgia nhìn sang trọng hơn */
-    font-size: 2.4em; /* Tăng kích thước chữ rất to, khoảng gấp đôi */
+    font-family: 'Georgia', serif; 
+    font-size: 1.8em; /* GIẢM KÍCH THƯỚC CHỮ XUỐNG CÒN 1.8em */
     font-style: italic; /* In nghiêng chữ */
     font-weight: 600;
     color: #dc3545; /* MÀU ĐỎ */
-    line-height: 1.3; /* Giữ line-height để chữ không quá giãn cách nếu có xuống dòng */
+    line-height: 1.5; /* Điều chỉnh line-height cho dễ đọc khi xuống dòng */
     display: block;
-    margin: 0 auto; /* Căn giữa */
+    margin: 0 auto; 
     
-    /* Điều chỉnh đổ bóng chữ cho rõ hơn */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); 
+    /* XÓA CÁC THUỘC TÍNH NÀY ĐỂ CHO PHÉP CHỮ XUỐNG DÒNG */
+    white-space: normal; /* Cho phép xuống dòng */
+    overflow: visible; /* Không ẩn nội dung */
+    text-overflow: clip; /* Không hiển thị dấu ... */
     
-    /* Thêm thuộc tính này để cố gắng giữ chữ trên một dòng (nếu có thể) */
-    white-space: nowrap; /* Ngăn không cho chữ xuống dòng */
-    overflow: hidden; /* Ẩn đi phần chữ bị tràn ra ngoài */
-    text-overflow: ellipsis; /* Hiện dấu ... nếu chữ bị tràn */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); 
 }
 
-/* Media Query cho Mobile: Điều chỉnh kích thước và cho phép xuống dòng */
-@media (max-width: 992px) { /* Thay đổi breakpoint để áp dụng cho cả tablet */
+/* Media Query cho Mobile: Điều chỉnh nhỏ hơn nữa */
+@media (max-width: 992px) { 
     .life-quote {
-        font-size: 1.8em; /* Giảm kích thước trên tablet/mobile */
-        white-space: normal; /* Cho phép chữ xuống dòng trên mobile */
-        text-overflow: clip; /* Xóa dấu ... trên mobile */
-        padding: 0 15px; /* Thêm padding để không dính lề */
-    }
-}
-
-@media (max-width: 576px) { /* Điều chỉnh riêng cho màn hình điện thoại nhỏ hơn */
-    .life-quote {
-        font-size: 1.3em;
-    }
-}
-
-/* ----------------------------------- */
-/* --- MEDIA QUERY CHO ĐIỆN THOẠI --- */
-/* ----------------------------------- */
-@media (max-width: 768px) {
-    /* Chuyển About Me thành 1 cột */
-    .about-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .about-visuals {
-        text-align: center;
-    }
-    .skills-tags {
-        justify-content: center;
-    }
-
-    /* Giảm kích thước chữ cho châm ngôn */
-    .life-quote {
-        font-size: 1.5em;
+        font-size: 1.4em; /* Giảm kích thước trên tablet/mobile */
+        padding: 0 15px; 
     }
 }
