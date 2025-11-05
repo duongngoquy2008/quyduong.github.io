@@ -1,26 +1,26 @@
 /* --- PHẦN ĐỊNH DẠNG CHUNG --- */
 body {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  background-color: #f8f9fa;
-  color: #333;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
 /* --- PHẦN HEADER (BANNER MÀU XANH) --- */
 header {
-  text-align: center; /* Đưa chữ ra giữa */
-  padding: 60px 20px 30px;
-  /* Sử dụng màu xanh gradient cho header */
-  background: linear-gradient(135deg, #0078d7, #00b4d8); 
-  color: white; /* Đảm bảo chữ màu trắng trên nền xanh */
+    text-align: center;
+    padding: 60px 20px 30px;
+    /* Sử dụng màu xanh gradient cho header */
+    background: linear-gradient(135deg, #0078d7, #00b4d8);
+    color: white;
 }
 header h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 header p {
-  font-size: 1.2em;
-  opacity: 0.9;
+    font-size: 1.2em;
+    opacity: 0.9;
 }
 
 /* --- PHẦN NAVIGATOR (MÀU ĐỎ) --- */
@@ -34,159 +34,93 @@ nav {
     z-index: 1000;
 }
 nav a {
-    color: white; /* Màu chữ trắng trên nền đỏ */
+    color: white;
     text-decoration: none;
     padding: 10px 20px;
     margin: 0 10px;
     font-weight: 500;
     transition: color 0.3s ease, background-color 0.3s ease;
 }
-/* HIỆU ỨNG HOVER CHO NAV (Màu đỏ sáng hơn khi di chuột) */
+/* HIỆU ỨNG HOVER CHO NAV */
 nav a:hover {
-    color: #dc3545; /* Đổi màu chữ sang đỏ */
-    background-color: #f8d7da; /* Đổi màu nền nhạt (hồng nhạt) */
+    color: #dc3545;
+    background-color: #f8d7da;
     border-radius: 4px;
 }
 
-/* --- PHẦN CÒN LẠI (GIỮ NGUYÊN) --- */
+/* --- PHẦN CHUNG CÁC SECTION --- */
 section {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 0 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 h2 {
-  border-left: 4px solid #0078d7; /* Giữ đường viền xanh cho tiêu đề */
-  padding-left: 10px;
-  color: #0078d7;
+    border-left: 4px solid #0078d7;
+    padding-left: 10px;
+    color: #0078d7;
 }
 ul {
-  line-height: 1.8em;
+    line-height: 1.8em;
 }
 footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #eee;
-  color: #555;
-  font-size: 0.9em;
+    text-align: center;
+    padding: 20px;
+    background-color: #eee;
+    color: #555;
+    font-size: 0.9em;
 }
-/* Hiệu ứng hover cho các liên kết chung */
 a {
-  color: #0078d7;
-  text-decoration: none;
+    color: #0078d7;
+    text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
-/* Thiết lập bố cục 2 cột cho phần About Me */
+
+/* ----------------------------------- */
+/* --- ĐỊNH DẠNG RIÊNG PHẦN ABOUT ME (ĐÃ HỢP NHẤT) --- */
+/* ----------------------------------- */
+
 .about-container {
-    display: flex; /* Bật Flexbox */
-    gap: 40px; /* Khoảng cách giữa 2 cột */
-    align-items: flex-start; 
-    margin-top: 20px;
-    padding: 20px 0; /* Xóa padding ngang nếu đã có section padding */
-}
-
-.about-text-content {
-    flex: 2; /* Cột văn bản chiếm 2/3 không gian */
-}
-
-.about-visuals {
-    flex: 1; /* Cột hình ảnh chiếm 1/3 không gian */
-    text-align: center;
-}
-
-/* Định dạng Ảnh đại diện */
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* Làm tròn thành hình tròn */
-    object-fit: cover;
-    margin-bottom: 20px;
-    border: 4px solid #0078d7; /* Viền xanh nổi bật */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Định dạng Lời chào */
-.greeting {
-    font-size: 1.5em;
-    font-weight: 700;
-    color: #0078d7;
-    margin-bottom: 20px;
-}
-
-/* Định dạng Thẻ Kỹ năng */
-.skills-tags {
-    margin-top: 25px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start; /* Căn thẻ kỹ năng sang trái */
-}
-
-.tag {
-    background-color: #e6f2ff; 
-    color: #0078d7; 
-    padding: 5px 10px;
-    margin: 5px 5px 5px 0; /* Giảm margin trái để sát lề hơn */
-    border-radius: 20px; 
-    font-size: 0.85em;
-    font-weight: 600;
-}
-
-/* Media Query cho Mobile: Chuyển về 1 cột */
-@media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .skills-tags {
-        justify-content: center; /* Căn giữa thẻ kỹ năng trên mobile */
-    }
-}
-/* --- Cập nhật: Phần About Me --- */
-
-/* Thiết lập bố cục 2 cột cho phần About Me */
-.about-container {
-    display: flex; 
-    gap: 60px; /* Tăng khoảng cách giữa 2 cột lên 60px */
-    align-items: flex-start; 
+    gap: 60px;
+    align-items: flex-start;
     margin-top: 30px;
-    padding: 20px 0; 
+    padding: 20px 0;
 }
 
 .about-text-content {
-    flex: 2; 
-    /* Đẩy chữ sang trái hơn một chút so với cột */
-    padding-left: 10px; 
+    flex: 2;
+    padding-left: 10px; /* Dịch chữ sang trái một chút */
 }
 
 .about-visuals {
-    flex: 1; 
-    /* Dịch ảnh sang phải hơn một chút */
-    text-align: right; 
+    flex: 1;
+    text-align: right; /* Dịch ảnh sang phải một chút */
 }
 
-/* Định dạng Lời chào */
+/* Định dạng Lời chào (To lên) */
 .greeting {
-    font-size: 2.5em; /* Tăng size Lời chào */
+    font-size: 2.5em;
     font-weight: 700;
     color: #0078d7;
     margin-bottom: 25px;
 }
 
-/* Định dạng Đoạn Văn bản chính */
+/* Định dạng Đoạn Văn bản chính (To hơn) */
 .about-text-content p:not(.greeting) {
-    font-size: 1.2em; /* Tăng kích thước font chữ nội dung */
+    font-size: 1.2em;
     line-height: 1.8;
 }
 
-/* Định dạng Ảnh đại diện */
+/* Định dạng Ảnh đại diện (Hình chữ nhật và To hơn) */
 .profile-pic {
-    width: 200px; /* Tăng chiều rộng lên 200px (to hơn trước) */
-    height: 250px; /* Tăng chiều cao để tạo khung chữ nhật đứng */
-    border-radius: 0; /* XÓA KHUNG TRÒN - Giữ nguyên hình chữ nhật */
+    width: 200px;
+    height: 250px;
+    border-radius: 0; /* XÓA KHUNG TRÒN */
     object-fit: cover;
     margin-bottom: 20px;
-    border: 3px solid #0078d7; /* Viền xanh nổi bật */
+    border: 3px solid #0078d7;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -199,17 +133,41 @@ a:hover {
 }
 
 .tag {
-    background-color: #e6f2ff; 
-    color: #0078d7; 
+    background-color: #e6f2ff;
+    color: #0078d7;
     padding: 7px 12px;
-    margin: 5px 5px 5px 0; 
-    border-radius: 20px; 
+    margin: 5px 5px 5px 0;
+    border-radius: 20px;
     font-size: 0.9em;
     font-weight: 600;
 }
 
-/* Media Query cho Mobile (Giữ nguyên cho thiết bị di động) */
+/* ----------------------------------- */
+/* --- ĐỊNH DẠNG CHÂM NGÔN SỐNG --- */
+/* ----------------------------------- */
+.quote-container {
+    text-align: center;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.life-quote {
+    font-family: 'Times New Roman', serif;
+    font-size: 2.2em; /* Kích thước chữ rất to */
+    font-weight: 600;
+    color: #dc3545; /* MÀU ĐỎ */
+    line-height: 1.4;
+    display: block;
+    max-width: 750px;
+    margin: 0 auto; /* Căn giữa */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* ----------------------------------- */
+/* --- MEDIA QUERY CHO ĐIỆN THOẠI --- */
+/* ----------------------------------- */
 @media (max-width: 768px) {
+    /* Chuyển About Me thành 1 cột */
     .about-container {
         flex-direction: column;
         align-items: center;
@@ -218,35 +176,11 @@ a:hover {
         text-align: center;
     }
     .skills-tags {
-        justify-content: center; 
+        justify-content: center;
     }
-}
-    .skills-tags {
-        justify-content: center; /* Căn giữa thẻ kỹ năng trên mobile */
-    }
-}
-/* --- ĐỊNH DẠNG CHÂM NGÔN SỐNG --- */
-.quote-container {
-    text-align: center; /* Căn giữa khối */
-    margin: 60px auto; /* Khoảng cách trên dưới */
-    max-width: 900px; /* Giới hạn chiều rộng để câu châm ngôn không quá dài */
-}
 
-.life-quote {
-    font-family: 'Times New Roman', serif; /* Chọn font cổ điển hơn */
-    font-size: 2.2em; /* Kích thước chữ rất to */
-    font-weight: 600;
-    color: #dc3545; /* MÀU ĐỎ TƯƠI (Giống Navbar) */
-    line-height: 1.4;
-    padding: 0 40px;
-    
-    /* Hiệu ứng nổi bật */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
-}
-
-/* Điều chỉnh kích thước trên thiết bị di động */
-@media (max-width: 768px) {
+    /* Giảm kích thước chữ cho châm ngôn */
     .life-quote {
-        font-size: 1.5em; /* Giảm kích thước trên di động */
+        font-size: 1.5em;
     }
 }
