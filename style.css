@@ -229,6 +229,30 @@ a:hover {
     
     .about-text-content p:not(.greeting) {
         font-size: 1em;
+        /* --- THÊM VÀO TRONG @media (max-width: 768px) --- */
+
+    /* Responsive cho Header Icons */
+    .header-content {
+        flex-direction: column; /* Xếp icon và text header dọc trên mobile/tablet */
+        padding: 10px 0;
+    }
+    
+    .header-icon {
+        width: 50px; /* Kích thước nhỏ hơn trên mobile */
+        height: 50px;
+        margin: 10px auto;
+    }
+    
+    /* Thiết lập thứ tự hiển thị */
+    .left-icon {
+        order: 1; /* Icon 1 lên đầu */
+    }
+    .header-text {
+        order: 2; /* Text ở giữa */
+    }
+    .right-icon {
+        order: 3; /* Icon 2 xuống cuối */
+    }
     }
 /* --- THÊM: ĐỊNH DẠNG ICON VÀ CĂN CHỈNH HEADER --- */
 
