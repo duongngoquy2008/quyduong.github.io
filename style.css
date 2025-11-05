@@ -27,10 +27,10 @@ header {
 /* Định dạng Icon/Ảnh trong Header */
 .header-icon {
     /* Kích thước ảnh đã được thu nhỏ theo yêu cầu */
-    width: 20px; 
-    height: 20px;
+    width: 40px; 
+    height: 40px;
     object-fit: cover;
-    border-radius: 50%; /* Làm tròn hình ảnh */
+    border-radius: 4px;
     opacity: 0.8;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
