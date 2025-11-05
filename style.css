@@ -27,8 +27,8 @@ header {
 /* Định dạng Icon/Ảnh trong Header */
 .header-icon {
     /* Kích thước ảnh đã được thu nhỏ theo yêu cầu */
-    width: 100px; 
-    height: 100px;
+    width: 200px; 
+    height: 200px;
     object-fit: cover;
     border-radius: 4px;
     opacity: 0.8;
