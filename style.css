@@ -230,22 +230,21 @@ a:hover {
     .about-text-content p:not(.greeting) {
         font-size: 1em;
     }
+/* --- THÊM: ĐỊNH DẠNG ICON VÀ CĂN CHỈNH HEADER --- */
+
+/* Container dùng Flexbox để căn chỉnh icon và text */
 .header-content {
     display: flex; /* Bật Flexbox */
-    justify-content: space-between; /* Đẩy các item ra hai bên */
-    align-items: center; /* Căn giữa theo chiều dọc */
-    max-width: 1200px;
-    margin: 0 auto;
+    justify-content: space-between; /* Đẩy icon ra hai bên */
+    align-items: center; /* Căn chỉnh theo chiều dọc */
+    max-width: 1200px; /* Giới hạn chiều rộng nội dung */
+    margin: 0 auto; /* Căn giữa nội dung */
     padding: 30px 0;
 }
-    .header-text {
-    text-align: center;
-    flex-grow: 1; /* Cho phép giãn nở để chữ luôn ở giữa */
-    padding: 0 20px;
-}
-  /* Định dạng Icon/Ảnh trong Header */
+
+/* Định dạng Icon/Ảnh trong Header */
 .header-icon {
-    /* Đã giảm kích thước trên desktop */
+    /* Kích thước ảnh đã được thu nhỏ theo yêu cầu */
     width: 60px; 
     height: 60px;
     object-fit: cover;
@@ -254,7 +253,18 @@ a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
 }
-    .skills-tags {
-        justify-content: center; /* Căn giữa các thẻ kỹ năng */
-    }
+
+.header-icon:hover {
+    opacity: 1;
+    transform: scale(1.05);
 }
+
+/* Định dạng text ở giữa */
+.header-text {
+    text-align: center;
+    flex-grow: 1; /* Cho phép phần chữ giãn nở để căn giữa */
+    padding: 0 20px;
+}
+/* END THÊM */
+
+    
