@@ -243,9 +243,11 @@ a:hover {
     flex-grow: 1; /* Cho phép giãn nở để chữ luôn ở giữa */
     padding: 0 20px;
 }
-    .header-icon {
-    width: 100px; /* Kích thước ảnh */
-    height: 100px;
+  /* Định dạng Icon/Ảnh trong Header */
+.header-icon {
+    /* Đã giảm kích thước trên desktop */
+    width: 60px; 
+    height: 60px;
     object-fit: cover;
     border-radius: 50%; /* Làm tròn hình ảnh */
     opacity: 0.8;
