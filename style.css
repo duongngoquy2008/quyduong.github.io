@@ -177,3 +177,42 @@ a:hover {
         padding: 0 15px; 
     }
 }
+
+/* ----------------------------------- */
+/* --- ĐỊNH DẠNG CONTACT FOOTER MỚI --- */
+/* ----------------------------------- */
+#contact-footer {
+    /* Nền màu xanh dương (Giống header) */
+    background: linear-gradient(90deg, #0078d7, #00b4d8); 
+    color: white; /* Chữ màu trắng */
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 50px; /* Tạo khoảng cách với nội dung phía trên */
+}
+
+#contact-footer p {
+    margin: 5px 0;
+}
+
+/* Định dạng các liên kết (Email, Phone) */
+#contact-footer a {
+    color: #f8f9fa; /* Màu trắng hơi nhạt */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+#contact-footer a:hover {
+    color: #ffd700; /* Màu vàng khi hover */
+    text-decoration: underline;
+}
+
+.contact-info {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.copyright {
+    font-size: 0.8em;
+    opacity: 0.8;
+}
