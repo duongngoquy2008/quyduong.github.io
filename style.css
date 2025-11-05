@@ -13,15 +13,50 @@ header {
     color: white;
     padding: 30px 20px 30px;
 }
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-header p {
-    font-size: 1.2em;
-    opacity: 0.9;
+
+/* Container dùng Flexbox để căn chỉnh icon và text */
+.header-content {
+    display: flex; /* Bật Flexbox */
+    justify-content: space-between; /* Đẩy icon ra hai bên */
+    align-items: center; /* Căn chỉnh theo chiều dọc */
+    max-width: 1200px; /* Giới hạn chiều rộng nội dung */
+    margin: 0 auto; /* Căn giữa nội dung */
+    padding: 30px 0;
 }
 
+/* Định dạng Icon/Ảnh trong Header */
+.header-icon {
+    /* Kích thước ảnh đã được thu nhỏ theo yêu cầu */
+    width: 60px; 
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%; /* Làm tròn hình ảnh */
+    opacity: 0.8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.header-icon:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Định dạng text ở giữa */
+.header-text {
+    text-align: center;
+    flex-grow: 1; /* Cho phép phần chữ giãn nở để căn giữa */
+    padding: 0 20px;
+}
+
+.header-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+.header-text p {
+    font-size: 1.2em;
+    opacity: 0.9;
+    margin-top: 0;
+}
 /* --- PHẦN NAVIGATOR (MÀU ĐỎ) --- */
 nav {
     background-color: #dc3545; /* Màu nền đỏ */
@@ -57,6 +92,7 @@ h2 {
     border-left: 4px solid #0078d7;
     padding-left: 10px;
     color: #0078d7;
+    margin-bottom: 25px;
 }
 ul {
     line-height: 1.8em;
@@ -134,7 +170,6 @@ a:hover {
     font-size: 0.9em;
     font-weight: 600;
 }
-
 /* ----------------------------------- */
 /* --- ĐỊNH DẠNG CHÂM NGÔN SỐNG (CHỈNH KÍCH THƯỚC) --- */
 /* ----------------------------------- */
@@ -154,15 +189,10 @@ a:hover {
     line-height: 1.5; 
     display: block;
     margin: 0 auto; 
-    
-    white-space: normal; 
-    overflow: visible; 
-    text-overflow: clip; 
-    
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); 
 }
 
-/* Media Query cho Mobile: Điều chỉnh nhỏ hơn nữa */
+/* Media Query cho Tablet: Điều chỉnh nhỏ hơn một chút */
 @media (max-width: 992px) { 
     .life-quote {
         font-size: 1.4em; 
@@ -171,7 +201,7 @@ a:hover {
 }
 
 /* ----------------------------------- */
-/* --- ĐỊNH DẠNG TRANG THÀNH TÍCH (ACHIEVEMENTS) --- */
+/* --- ĐỊNH DẠNG TRANG THÀNH TÍCH/HOẠT ĐỘNG --- */
 /* ----------------------------------- */
 .achievement-item {
     background-color: white;
@@ -188,7 +218,7 @@ a:hover {
 }
 
 .achievement-item h3 {
-    color: #0078d7; /* Màu xanh cho tiêu đề giải thưởng */
+    color: #0078d7; /* Màu xanh cho tiêu đề */
     margin-top: 0;
     font-size: 1.5em;
     border-bottom: 1px solid #eee;
@@ -203,10 +233,80 @@ a:hover {
     margin-bottom: 10px;
 }
 
+
 /* ----------------------------------- */
-/* --- MEDIA QUERY CHO ABOUT ME (MOBILE) --- */
+/* --- ĐỊNH DẠNG CONTACT FOOTER --- */
+/* ----------------------------------- */
+#contact-footer {
+    /* Nền màu xanh dương (Giống header) */
+    background: linear-gradient(90deg, #0078d7, #00b4d8); 
+    color: white; /* Chữ màu trắng */
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 50px; 
+}
+#contact-footer p {
+    margin: 5px 0;
+}
+#contact-footer a {
+    color: #f8f9fa; 
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+#contact-footer a:hover {
+    color: #ffd700; /* Màu vàng khi hover */
+    text-decoration: underline;
+}
+.contact-info {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+.copyright {
+    font-size: 0.8em;
+    opacity: 0.8;
+}
+/* ----------------------------------- */
+/* --- MEDIA QUERY (RESPONSIVE) --- */
 /* ----------------------------------- */
 @media (max-width: 768px) {
+    /* ĐỊNH DẠNG CHUNG */
+    header h1 {
+        font-size: 2em;
+    }
+    header p {
+        font-size: 1em;
+    }
+    nav a {
+        padding: 8px 10px;
+        margin: 0 5px;
+        font-size: 0.9em;
+    }
+
+    /* HEADER ICONS (Responsive) */
+    .header-content {
+        flex-direction: column; /* Xếp icon và text header dọc trên mobile/tablet */
+        padding: 10px 0;
+    }
+    
+    .header-icon {
+        width: 50px; /* Kích thước nhỏ hơn trên mobile */
+        height: 50px;
+        margin: 10px auto;
+    }
+    
+    /* Thiết lập thứ tự hiển thị */
+    .left-icon {
+        order: 1; /* Icon 1 lên đầu */
+    }
+    .header-text {
+        order: 2; /* Text ở giữa */
+    }
+    .right-icon {
+        order: 3; /* Icon 2 xuống cuối */
+    }
+
+    /* PHẦN ABOUT ME (Responsive) */
     .about-container {
         flex-direction: column; /* Chuyển thành cột */
         gap: 30px;
@@ -229,66 +329,9 @@ a:hover {
     
     .about-text-content p:not(.greeting) {
         font-size: 1em;
-        /* --- THÊM VÀO TRONG @media (max-width: 768px) --- */
+    }
 
-    /* Responsive cho Header Icons */
-    .header-content {
-        flex-direction: column; /* Xếp icon và text header dọc trên mobile/tablet */
-        padding: 10px 0;
+    .skills-tags {
+        justify-content: center; /* Căn giữa các thẻ kỹ năng */
     }
-    
-    .header-icon {
-        width: 50px; /* Kích thước nhỏ hơn trên mobile */
-        height: 50px;
-        margin: 10px auto;
-    }
-    
-    /* Thiết lập thứ tự hiển thị */
-    .left-icon {
-        order: 1; /* Icon 1 lên đầu */
-    }
-    .header-text {
-        order: 2; /* Text ở giữa */
-    }
-    .right-icon {
-        order: 3; /* Icon 2 xuống cuối */
-    }
-    }
-/* --- THÊM: ĐỊNH DẠNG ICON VÀ CĂN CHỈNH HEADER --- */
-
-/* Container dùng Flexbox để căn chỉnh icon và text */
-.header-content {
-    display: flex; /* Bật Flexbox */
-    justify-content: space-between; /* Đẩy icon ra hai bên */
-    align-items: center; /* Căn chỉnh theo chiều dọc */
-    max-width: 1200px; /* Giới hạn chiều rộng nội dung */
-    margin: 0 auto; /* Căn giữa nội dung */
-    padding: 30px 0;
 }
-
-/* Định dạng Icon/Ảnh trong Header */
-.header-icon {
-    /* Kích thước ảnh đã được thu nhỏ theo yêu cầu */
-    width: 60px; 
-    height: 60px;
-    object-fit: cover;
-    border-radius: 50%; /* Làm tròn hình ảnh */
-    opacity: 0.8;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-}
-
-.header-icon:hover {
-    opacity: 1;
-    transform: scale(1.05);
-}
-
-/* Định dạng text ở giữa */
-.header-text {
-    text-align: center;
-    flex-grow: 1; /* Cho phép phần chữ giãn nở để căn giữa */
-    padding: 0 20px;
-}
-/* END THÊM */
-
-    
