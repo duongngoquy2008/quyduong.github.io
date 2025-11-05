@@ -225,3 +225,28 @@ a:hover {
         justify-content: center; /* Căn giữa thẻ kỹ năng trên mobile */
     }
 }
+/* --- ĐỊNH DẠNG CHÂM NGÔN SỐNG --- */
+.quote-container {
+    text-align: center; /* Căn giữa khối */
+    margin: 60px auto; /* Khoảng cách trên dưới */
+    max-width: 900px; /* Giới hạn chiều rộng để câu châm ngôn không quá dài */
+}
+
+.life-quote {
+    font-family: 'Times New Roman', serif; /* Chọn font cổ điển hơn */
+    font-size: 2.2em; /* Kích thước chữ rất to */
+    font-weight: 600;
+    color: #dc3545; /* MÀU ĐỎ TƯƠI (Giống Navbar) */
+    line-height: 1.4;
+    padding: 0 40px;
+    
+    /* Hiệu ứng nổi bật */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+}
+
+/* Điều chỉnh kích thước trên thiết bị di động */
+@media (max-width: 768px) {
+    .life-quote {
+        font-size: 1.5em; /* Giảm kích thước trên di động */
+    }
+}
