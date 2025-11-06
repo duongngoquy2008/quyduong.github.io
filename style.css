@@ -360,3 +360,76 @@ a:hover {
         margin: 20px auto 40px auto;
     }
 }
+/* --- Định dạng cho tiêu đề mới --- */
+.section-title-red {
+    font-size: 3em; /* Tăng kích thước chữ lên 3em */
+    color: #cc0000; /* Màu đỏ nổi bật */
+    text-align: center; /* Đã được canh giữa */
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Tăng khoảng cách chữ để trông nổi bật hơn */
+}
+
+/* --- Định dạng cho đoạn mô tả (intro-text) --- */
+.intro-text {
+    font-style: italic;
+    font-size: 1.1em;
+    color: #555; /* Đổi màu xám đậm hơn */
+    margin-bottom: 30px;
+    padding: 15px;
+    border-bottom: 2px solid #ddd;
+    text-align: center;
+}
+
+/* Gợi ý thêm: Định dạng cơ bản cho phần Achievements */
+#achievements {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+#achievements ul {
+    list-style: none;
+    padding: 0;
+}
+
+#achievements li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    font-size: 1.05em;
+    border-left: 5px solid #cc0000; /* Đường viền đỏ để làm nổi bật thành tích */
+}
+
+/* Định dạng cơ bản cho Header và Navigation */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #555;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
