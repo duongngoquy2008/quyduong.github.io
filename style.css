@@ -335,3 +335,28 @@ a:hover {
         justify-content: center; /* Căn giữa các thẻ kỹ năng */
     }
 }
+/* ----------------------------------- */
+/* --- ĐỊNH DẠNG ĐOẠN GIỚI THIỆU TỔNG QUAN --- */
+/* ----------------------------------- */
+.achievement-intro {
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #495057; /* Màu xám đậm */
+    text-align: center;
+    max-width: 750px;
+    margin: 30px auto 60px auto; /* Tạo khoảng cách lớn hơn phía dưới */
+    padding: 15px 25px;
+    border-left: 5px solid #0078d7; /* Đường viền màu xanh nhẹ */
+    border-right: 5px solid #0078d7;
+    background-color: #eaf2fb; /* Nền màu xanh nhạt */
+    line-height: 1.6;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .achievement-intro {
+        font-size: 1.1em;
+        padding: 15px;
+        margin: 20px auto 40px auto;
+    }
+}
