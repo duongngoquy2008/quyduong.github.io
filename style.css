@@ -88,6 +88,7 @@ section {
     margin: 40px auto;
     padding: 0 20px;
 }
+/* Định dạng tiêu đề H2 mặc định */
 h2 {
     border-left: 4px solid #0078d7;
     padding-left: 10px;
@@ -107,7 +108,7 @@ a:hover {
 }
 
 /* ----------------------------------- */
-/* --- ĐỊNH DẠNG RIÊNG PHẦN ABOUT ME (ĐÃ HỢP NHẤT) --- */
+/* --- ĐỊNH DẠNG RIÊNG PHẦN ABOUT ME --- */
 /* ----------------------------------- */
 
 .about-container {
@@ -171,7 +172,7 @@ a:hover {
     font-weight: 600;
 }
 /* ----------------------------------- */
-/* --- ĐỊNH DẠNG CHÂM NGÔN SỐNG (CHỈNH KÍCH THƯỚC) --- */
+/* --- ĐỊNH DẠNG CHÂM NGÔN SỐNG --- */
 /* ----------------------------------- */
 .quote-container {
     text-align: center;
@@ -201,8 +202,42 @@ a:hover {
 }
 
 /* ----------------------------------- */
-/* --- ĐỊNH DẠNG TRANG THÀNH TÍCH/HOẠT ĐỘNG --- */
+/* --- ĐỊNH DẠNG RIÊNG CHO TRANG THÀNH TÍCH (ACHIEVEMENTS) --- */
 /* ----------------------------------- */
+
+/* --- Tiêu đề chính (theo yêu cầu: CĂN GIỮA & CHỮ TO) --- */
+.section-title-red {
+    font-size: 3em; /* Kích thước lớn: 3em */
+    color: #dc3545; /* Đổi màu đỏ về màu chuẩn của Nav */
+    text-align: center; /* Đã được canh giữa */
+    margin-top: 40px;
+    margin-bottom: 30px; /* Tăng khoảng cách dưới tiêu đề */
+    font-weight: 800; /* Dày hơn nữa */
+    text-transform: uppercase;
+    letter-spacing: 3px; /* Tăng khoảng cách chữ */
+}
+
+/* --- Đoạn giới thiệu tổng quan/mô tả --- */
+.achievement-intro {
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #495057; /* Màu xám đậm */
+    text-align: center;
+    max-width: 750px;
+    margin: 30px auto 60px auto; /* Tạo khoảng cách lớn hơn phía dưới */
+    padding: 15px 25px;
+    border-left: 5px solid #0078d7; /* Đường viền màu xanh nhẹ */
+    border-right: 5px solid #0078d7;
+    background-color: #eaf2fb; /* Nền màu xanh nhạt */
+    line-height: 1.6;
+    border-radius: 8px;
+}
+
+#achievements ul {
+    list-style: none;
+    padding: 0;
+}
+
 .achievement-item {
     background-color: white;
     border-left: 5px solid #dc3545; /* Đường viền màu đỏ nổi bật */
@@ -232,7 +267,6 @@ a:hover {
     font-size: 0.9em;
     margin-bottom: 10px;
 }
-
 
 /* ----------------------------------- */
 /* --- ĐỊNH DẠNG CONTACT FOOTER --- */
@@ -334,102 +368,16 @@ a:hover {
     .skills-tags {
         justify-content: center; /* Căn giữa các thẻ kỹ năng */
     }
-}
-/* ----------------------------------- */
-/* --- ĐỊNH DẠNG ĐOẠN GIỚI THIỆU TỔNG QUAN --- */
-/* ----------------------------------- */
-.achievement-intro {
-    font-size: 1.3em;
-    font-weight: 500;
-    color: #495057; /* Màu xám đậm */
-    text-align: center;
-    max-width: 750px;
-    margin: 30px auto 60px auto; /* Tạo khoảng cách lớn hơn phía dưới */
-    padding: 15px 25px;
-    border-left: 5px solid #0078d7; /* Đường viền màu xanh nhẹ */
-    border-right: 5px solid #0078d7;
-    background-color: #eaf2fb; /* Nền màu xanh nhạt */
-    line-height: 1.6;
-    border-radius: 8px;
-}
 
-@media (max-width: 768px) {
-    .achievement-intro {
-        font-size: 1.1em;
-        padding: 15px;
-        margin: 20px auto 40px auto;
+    /* ĐỊNH DẠNG TRANG THÀNH TÍCH */
+    .section-title-red {
+        font-size: 2em; /* Giảm kích thước trên mobile */
     }
-}
-/* --- Định dạng cho tiêu đề mới --- */
-.section-title-red {
-    font-size: 3em; /* Tăng kích thước chữ lên 3em */
-    color: #cc0000; /* Màu đỏ nổi bật */
-    text-align: center; /* Đã được canh giữa */
-    margin-top: 40px;
-    margin-bottom: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px; /* Tăng khoảng cách chữ để trông nổi bật hơn */
-}
-
-/* --- Định dạng cho đoạn mô tả (intro-text) --- */
-.intro-text {
-    font-style: italic;
-    font-size: 1.1em;
-    color: #555; /* Đổi màu xám đậm hơn */
-    margin-bottom: 30px;
-    padding: 15px;
-    border-bottom: 2px solid #ddd;
-    text-align: center;
-}
-
-/* Gợi ý thêm: Định dạng cơ bản cho phần Achievements */
-#achievements {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-}
-
-#achievements ul {
-    list-style: none;
-    padding: 0;
-}
-
-#achievements li {
-    background-color: #f9f9f9;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    font-size: 1.05em;
-    border-left: 5px solid #cc0000; /* Đường viền đỏ để làm nổi bật thành tích */
-}
-
-/* Định dạng cơ bản cho Header và Navigation */
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-nav {
-    background-color: #555;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    margin-top: 50px;
+    @media (max-width: 768px) {
+        .achievement-intro {
+            font-size: 1.1em;
+            padding: 15px;
+            margin: 20px auto 40px auto;
+        }
+    }
 }
