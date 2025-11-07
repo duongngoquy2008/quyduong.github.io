@@ -39,51 +39,9 @@
         });
     });
 </script>
-```
 
-### 4. Cập nhật HTML hiện tại (File `achievements.html`)
 
-Bây giờ, bạn cần **thêm class `zoomable-img`** vào **tất cả** các thẻ `<img>` bạn muốn phóng to, và **xóa style inline** `onclick="openModal(...)` nếu bạn đã dùng nó trước đó, vì chúng ta đang dùng JavaScript thuần.
 
-Ví dụ, ảnh Thủ khoa sẽ được cập nhật như sau:
-
-**Ảnh Thủ khoa (3 ảnh):**
-
-Tìm đoạn code bạn đã chèn cho 3 ảnh chúc mừng và **thêm class `zoomable-img`** vào mỗi thẻ `<img>`.
-
-**Từ:**
-```html
-<img src="thuchucmung1.jpg" alt="Thư chúc mừng 1" style="width: 30%; max-width: 180px; ...">
-<img src="thuchucmung2.jpg" alt="Thư chúc mừng 2" style="width: 30%; max-width: 180px; ...">
-<img src="thuchucmung3.jpg" alt="Thư chúc mừng 3" style="width: 30%; max-width: 180px; ...">
-```
-**Thành:**
-```html
-<img class="zoomable-img" src="thuchucmung1.jpg" alt="Thư chúc mừng 1" style="width: 30%; max-width: 180px; ...">
-<img class="zoomable-img" src="thuchucmung2.jpg" alt="Thư chúc mừng 2" style="width: 30%; max-width: 180px; ...">
-<img class="zoomable-img" src="thuchucmung3.jpg" alt="Thư chúc mừng 3" style="width: 30%; max-width: 180px; ...">
-```
-
-**Ảnh Giải Ba Quốc Gia (`giaiquocgia.jpg`):**
-
-**Từ:**
-```html
-<img src="giaiquocgia.jpg" alt="National Math Olympiad Third Prize Certificate" style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
-```
-**Thành:**
-```html
-<img class="zoomable-img" src="giaiquocgia.jpg" alt="National Math Olympiad Third Prize Certificate" style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
-```
-
-**Ảnh Giải Nhất Thành Phố (`nhatthanhpho.jpg`):**
-
-**Từ:**
-```html
-<img src="nhatthanhpho.jpg" alt="City-level Mathematics Competition First Prize Certificate" style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
-```
-**Thành:**
-```html
-<img class="zoomable-img" src="nhatthanhpho.jpg" alt="City-level Mathematics Competition First Prize Certificate" style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
 <body>
 <header>
     <div class="header-content">
