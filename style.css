@@ -381,3 +381,57 @@ a:hover {
         }
     }
 }
+/* --- LIGHTBOX/MODAL STYLING (PHÓNG TO ẢNH KHI CLICK) --- */
+
+/* Lớp phủ nền tối (Modal Backdrop) */
+.modal-overlay {
+    display: none; /* Ban đầu ẩn */
+    position: fixed;
+    z-index: 2000; /* Luôn nằm trên mọi thứ */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Màu đen trong suốt */
+    overflow: auto;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 20px;
+}
+
+/* Nội dung Modal (Ảnh đã phóng to) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 800px; /* Kích thước tối đa cho ảnh phóng to */
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+/* Nút Đóng Modal */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hiệu ứng Zoom khi Modal mở */
+@keyframes zoom {
+    from {transform: scale(0);} 
+    to {transform: scale(1);}
+}
