@@ -1,47 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
 </head>
-    <!-- Cấu trúc Modal (Lightbox) -->
-<div id="imageModal" class="modal-overlay" onclick="closeModal()">
-    <!-- Nút đóng -->
-    <span class="close-btn" onclick="closeModal(event)">&times;</span>
-    <!-- Ảnh sẽ được hiển thị ở đây -->
-    <img class="modal-content" id="img01">
-</div>
-    <script>
-    // Lấy Modal và các phần tử
-    const modal = document.getElementById("imageModal");
-    const modalImg = document.getElementById("img01");
-
-    // Hàm mở Modal
-    function openModal(imageSrc) {
-        modal.style.display = "flex"; // Hiển thị Modal
-        modalImg.src = imageSrc;      // Thiết lập nguồn ảnh
-    }
-
-    // Hàm đóng Modal
-    function closeModal(event) {
-        // Kiểm tra nếu click vào nút đóng (x) hoặc lớp phủ nền (modal-overlay)
-        if (!event || event.target === modal || event.target.classList.contains('close-btn')) {
-             modal.style.display = "none";
-        }
-    }
-
-    // Gắn sự kiện click cho tất cả ảnh có class 'zoomable-img'
-    document.addEventListener('DOMContentLoaded', () => {
-        const images = document.querySelectorAll('.zoomable-img');
-        images.forEach(img => {
-            img.addEventListener('click', () => {
-                openModal(img.src);
-            });
-        });
-    });
-</script>
-
-
-
 <body>
 <header>
     <div class="header-content">
@@ -74,44 +35,44 @@
             Ever since I was young, I have developed a great passion for math ever since I was in primary school. I have participated in several math competitions and gained some prizes and medal, throughout secondary and high school.
         </p>
         <li class="achievement-item">
-                <!-- Tiêu đề màu xanh, to vừa, căn giữa -->
-                <h3 style="color: #0078d7; text-align: center; font-size: 1.8em; margin-bottom: 10px;">Valedictorian of HUS High School for Gifted Students Entrance Exam in 2023</h3>
-                
-                <!-- Đoạn mô tả màu đen thông thường -->
-                <p style="color: #333; font-size: 1.1em; line-height: 1.6;">
-                    My initial specialized subjects were Physics, in grade 6, 7, and Chemistry, in grade 8. However, by the end of grade 8, I realized that Math is my real passion and decided to choose Math as my chosen specialized subject. For me, it was one of the turning points in my academic journey. After one year of learning and practicing, I became the Valedictorian in the entrance math exam of HUS HSGS, which I believe is one of my proudest achievements.
-                </p>
+            <!-- Tiêu đề màu xanh, to vừa, căn giữa -->
+            <h3 style="color: #0078d7; text-align: center; font-size: 1.8em; margin-bottom: 10px;">Valedictorian of HUS High School for Gifted Students Entrance Exam in 2023</h3>
+            
+            <!-- Đoạn mô tả màu đen thông thường -->
+            <p style="color: #333; font-size: 1.1em; line-height: 1.6;">
+                My initial specialized subjects were Physics, in grade 6, 7, and Chemistry, in grade 8. However, by the end of grade 8, I realized that Math is my real passion and decided to choose Math as my chosen specialized subject. For me, it was one of the turning points in my academic journey. After one year of learning and practicing, I became the Valedictorian in the entrance math exam of HUS HSGS, which I believe is one of my proudest achievements.
+            </p>
             <!-- Container cho 3 ảnh chúc mừng -->
-    <div style="display: flex; justify-content: space-around; gap: 10px; margin-top: 25px; flex-wrap: wrap;">
-        
-        <!-- Ảnh 1: thuchucmung1.jpg -->
-        <img src="thuchucmung1.jpg" alt="Thư chúc mừng 1" style="width: 30%; max-width: 180px; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); object-fit: cover; transition: transform 0.3s ease;" 
-             onerror="this.onerror=null; this.src='https://placehold.co/180x180/0078d7/ffffff?text=Image+1';" />
-        
-        <!-- Ảnh 2: thuchucmung2.jpg -->
-        <img src="thuchucmung2.jpg" alt="Thư chúc mừng 2" style="width: 30%; max-width: 180px; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); object-fit: cover; transition: transform 0.3s ease;"
-             onerror="this.onerror=null; this.src='https://placehold.co/180x180/0078d7/ffffff?text=Image+2';" />
+        <div style="display: flex; justify-content: space-around; gap: 10px; margin-top: 25px; flex-wrap: wrap;">
+            
+            <!-- Ảnh 1: thuchucmung1.jpg (ĐÃ THÊM CLASS zoomable-img) -->
+            <img class="zoomable-img" src="thuchucmung1.jpg" alt="Thư chúc mừng 1" style="width: 30%; max-width: 180px; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); object-fit: cover; transition: transform 0.3s ease;" 
+                onerror="this.onerror=null; this.src='https://placehold.co/180x180/0078d7/ffffff?text=Image+1';" />
+            
+            <!-- Ảnh 2: thuchucmung2.jpg (ĐÃ THÊM CLASS zoomable-img) -->
+            <img class="zoomable-img" src="thuchucmung2.jpg" alt="Thư chúc mừng 2" style="width: 30%; max-width: 180px; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); object-fit: cover; transition: transform 0.3s ease;"
+                onerror="this.onerror=null; this.src='https://placehold.co/180x180/0078d7/ffffff?text=Image+2';" />
 
-        <!-- Ảnh 3: thuchucmung3.jpg -->
-        <img src="thuchucmung3.jpg" alt="Thư chúc mừng 3" style="width: 30%; max-width: 180px; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); object-fit: cover; transition: transform 0.3s ease;"
-             onerror="this.onerror=null; this.src='https://placehold.co/180x180/0078d7/ffffff?text=Image+3';" />
+            <!-- Ảnh 3: thuchucmung3.jpg (ĐÃ THÊM CLASS zoomable-img) -->
+            <img class="zoomable-img" src="thuchucmung3.jpg" alt="Thư chúc mừng 3" style="width: 30%; max-width: 180px; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); object-fit: cover; transition: transform 0.3s ease;"
+                onerror="this.onerror=null; this.src='https://placehold.co/180x180/0078d7/ffffff?text=Image+3';" />
 
-    </div>
+        </div>
             </li>
         <li class="achievement-item" style="margin-top: 40px;">
-                <!-- Tiêu đề màu xanh, to vừa, căn giữa -->
-                <h3 style="color: #0078d7; text-align: center; font-size: 1.8em; margin-bottom: 10px;">Third prize in Nation Math Olympiad 2025</h3>
-                
-                <!-- Đoạn mô tả màu đen thông thường -->
-                <p style="color: #333; font-size: 1.1em; line-height: 1.6; margin-bottom: 20px;">
-                    In my high school education, I chose to participate in math competitions to keep pursuing my passion for studying math. The third prize achieved in the Olympiad is one of my biggest achievements during high school.
-                </p>
-                
-                <!-- Hình ảnh chứng nhận (giữ nguyên khuôn hình chữ nhật) -->
-                <div style="text-align: center;">
-                    <!-- Sử dụng một div để chứa ảnh và đảm bảo căn giữa -->
-                    <img src="giaiquocgia.jpg" alt="National Math Olympiad Third Prize Certificate" style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
-                </div>
+            <!-- Tiêu đề màu xanh, to vừa, căn giữa -->
+            <h3 style="color: #0078d7; text-align: center; font-size: 1.8em; margin-bottom: 10px;">Third prize in Nation Math Olympiad 2025</h3>
+            
+            <!-- Đoạn mô tả màu đen thông thường -->
+            <p style="color: #333; font-size: 1.1em; line-height: 1.6; margin-bottom: 20px;">
+                In my high school education, I chose to participate in math competitions to keep pursuing my passion for studying math. The third prize achieved in the Olympiad is one of my biggest achievements during high school.
+            </p>
+            
+            <!-- Hình ảnh chứng nhận (giữ nguyên khuôn hình chữ nhật) -->
+            <div style="text-align: center;">
+                <!-- ĐÃ THÊM CLASS zoomable-img -->
+                <img class="zoomable-img" src="giaiquocgia.jpg" alt="National Math Olympiad Third Prize Certificate" style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+            </div>
             </li>
         <li class="achievement-item" style="margin-top: 40px;">
     <!-- Tiêu đề màu xanh, to vừa, căn giữa -->
@@ -124,7 +85,8 @@
     
     <!-- Hình ảnh chứng nhận -->
     <div style="text-align: center;">
-        <img src="nhatthanhpho.jpg" alt="City-level Mathematics Competition First Prize Certificate" style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+        <!-- ĐÃ THÊM CLASS zoomable-img -->
+        <img class="zoomable-img" src="nhatthanhpho.jpg" alt="City-level Mathematics Competition First Prize Certificate" style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
     </div>
 </li>
         <ul>
@@ -142,6 +104,47 @@
         <p>&copy; 2025 Ngô Quý Dương. All rights reserved.</p>
     </div>
 </footer>
+
+<!-- CẤU TRÚC MODAL (LIGHTBOX) VÀ SCRIPT ĐÃ ĐƯỢC CHUYỂN VÀO CUỐI BODY -->
+<!-- Cấu trúc Modal (Lightbox) -->
+<div id="imageModal" class="modal-overlay" onclick="closeModal()">
+    <!-- Nút đóng -->
+    <span class="close-btn" onclick="closeModal(event)">&times;</span>
+    <!-- Ảnh sẽ được hiển thị ở đây -->
+    <img class="modal-content" id="img01">
+</div>
+
+<script>
+    // Lấy Modal và các phần tử
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("img01");
+
+    // Hàm mở Modal
+    function openModal(imageSrc) {
+        modal.style.display = "flex"; // Hiển thị Modal (dùng flex để căn giữa)
+        modalImg.src = imageSrc;      // Thiết lập nguồn ảnh
+    }
+
+    // Hàm đóng Modal
+    function closeModal(event) {
+        // Kiểm tra nếu click vào nút đóng (x) hoặc lớp phủ nền (modal-overlay)
+        // Nếu click vào ảnh (modalImg) thì không đóng
+        if (!event || event.target === modal || event.target.classList.contains('close-btn')) {
+             modal.style.display = "none";
+        }
+    }
+
+    // Gắn sự kiện click cho tất cả ảnh có class 'zoomable-img'
+    document.addEventListener('DOMContentLoaded', () => {
+        const images = document.querySelectorAll('.zoomable-img');
+        images.forEach(img => {
+            img.style.cursor = 'pointer'; // Thêm hiệu ứng chuột
+            img.addEventListener('click', () => {
+                openModal(img.src);
+            });
+        });
+    });
+</script>
 
 </body>
 </html>
