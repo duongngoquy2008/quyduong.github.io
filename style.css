@@ -435,3 +435,44 @@ a:hover {
     from {transform: scale(0);} 
     to {transform: scale(1);}
 }
+
+
+
+
+
+/* Thêm quy tắc này để đổi màu H2 thành đỏ và bỏ gạch chân */
+.red-heading {
+    color: #cc0000 !important; /* Màu đỏ đậm */
+    border-bottom: none !important; /* Loại bỏ gạch dưới */
+}
+
+/* Các quy tắc CSS cho danh sách */
+.press-list {
+    list-style-type: disc; /* Dùng dấu chấm tròn */
+    padding-left: 20px; /* Tạo khoảng lề để hiển thị bullet */
+    margin-top: 10px;
+}
+
+.press-list li {
+    margin-bottom: 15px; /* Khoảng cách giữa các mục */
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.press-list a {
+    color: #1e40af; /* Giữ màu xanh cho liên kết để dễ nhận biết */
+    text-decoration: none; /* Bỏ gạch chân mặc định */
+    font-weight: 600; 
+    transition: color 0.2s;
+}
+
+.press-list a:hover {
+    color: #3b82f6; /* Xanh nhạt hơn khi di chuột */
+    text-decoration: underline; /* Thêm gạch chân khi di chuột */
+}
+
+.press-source-text {
+    color: #6b7280; /* Màu xám cho nguồn */
+    font-size: 0.95rem;
+    margin-left: 5px; 
+}
