@@ -440,10 +440,12 @@ a:hover {
 
 
 
-/* Thêm quy tắc này để đổi màu H2 thành đỏ và bỏ gạch chân */
+/* Thêm quy tắc này để đổi màu H2 thành đỏ, bỏ gạch chân và loại bỏ border-left (gạch xanh đứng) */
 .red-heading {
     color: #cc0000 !important; /* Màu đỏ đậm */
-    border-bottom: none !important; /* Loại bỏ gạch dưới */
+    border-bottom: none !important; /* Loại bỏ gạch dưới (gạch ngang) */
+    border-left: none !important; /* LOẠI BỎ GẠCH DỌC MÀU XANH */
+    padding-left: 0 !important; /* Đảm bảo không còn padding thừa do gạch dọc */
 }
 
 /* Các quy tắc CSS cho danh sách */
