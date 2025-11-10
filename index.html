@@ -1,179 +1,141 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ngô Quý Dương - Math & Data Science</title>
-    <!-- Load Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Custom styles for background and font */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f7f7f7; /* Light gray background */
-        }
-        .header-bg {
-            /* Blue gradient similar to the screenshot */
-            background: linear-gradient(135deg, #0078d7 0%, #00b4d8 100%);
-            height: 300px;
-            position: relative;
-        }
-        .nav-link {
-            transition: color 0.3s, border-bottom 0.3s;
-            border-bottom: 3px solid transparent;
-        }
-        .nav-link:hover {
-            color: #fef3c7; /* Light yellow on hover */
-            border-bottom-color: #fef3c7;
-        }
-        .nav-link.active {
-            font-weight: 700;
-            border-bottom-color: #ffffff;
-            color: #ffffff;
-        }
-        .skill-tag {
-            background-color: #e0f2fe; /* Light blue */
-            color: #0078d7;
-            padding: 0.25rem 0.75rem;
-            border-radius: 9999px;
-            font-size: 0.875rem;
-            font-weight: 500;
-            margin-right: 0.5rem;
-            margin-bottom: 0.5rem;
-            display: inline-block;
-            transition: background-color 0.3s;
-        }
-        .skill-tag:hover {
-            background-color: #bfdbfe; /* Hover effect */
-        }
-        .press-link {
-            color: #0078d7;
-            text-decoration: none;
-            font-weight: 500;
-            display: flex;
-            align-items: flex-start;
-            transition: color 0.3s;
-        }
-        .press-link:hover {
-            color: #0056a0;
-            text-decoration: underline;
-        }
-        .link-bullet {
-            display: inline-block; 
-            min-width: 10px; 
-            height: 10px; 
-            border-radius: 50%; 
-            background-color: #0078d7; 
-            margin-top: 6px; 
-            margin-right: 10px;
-        }
-    </style>
+
+    <title>Ngô Quý Dương | Personal Website</title>
+
+    <link rel="stylesheet" href="style.css"> 
+
 </head>
+
 <body>
 
-    <!-- Header Section with Nav -->
-    <header class="header-bg shadow-lg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col items-center justify-center h-full">
-            <h1 class="text-4xl sm:text-5xl font-extrabold text-white mb-2">Ngô Quý Dương</h1>
-            <p class="text-lg sm:text-xl text-white opacity-90">Student | Math & Data Science Enthusiast | Future Innovator</p>
-        </div>
-        
-        <!-- Navigation Bar -->
-        <nav class="bg-red-600 shadow-md">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-center space-x-6 sm:space-x-10">
-                    <a href="#" class="nav-link active py-4 text-white">About me</a>
-                    <a href="achievements.html" class="nav-link py-4 text-white">Academic awards and achievements</a>
-                    <a href="activities.html" class="nav-link py-4 text-white">Activities and experiences</a>
-                </div>
-            </div>
-        </nav>
+    <header>
+
+        <h1>Ngô Quý Dương</h1>
+
+        <p>Student | Math & Data Science Enthusiast | Future Innovator</p>
+
     </header>
 
-    <!-- Main Content - About Me -->
-    <main class="max-w-7xl mx-auto p-4 sm:p-8 lg:p-12 mt-8 bg-white rounded-xl shadow-xl">
-        <section id="about-me" class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-            
-            <!-- Left Column: Text Content -->
-            <div class="md:col-span-2">
-                <h2 class="text-3xl font-bold text-gray-800 mb-6 border-l-4 border-red-600 pl-3">Hi, I'm Ngô Quý Dương.</h2>
+
+
+    <nav>
+
+        <a href="index.html">About me</a>
+
+        <a href="achievements.html">Academic awards and achievements</a>
+
+        <a href="projects.html">Activities and experiences</a>
+
+    </nav>
+
+    
+
+    <main>
+
+        <section id="about">
+
+            <div class="about-container"> 
+
                 
-                <p class="text-gray-600 text-lg mb-6 leading-relaxed">
-                    My name is Ngô Quý Dương. I'm passionate about mathematics, programming, and analysing data. I enjoy leading projects, helping others learn, and contributing ideas that make a difference. My aspiration is to contribute meaningful things and help more people around the world.
-                </p>
 
-                <!-- Strengths/Skills Tags -->
-                <h3 class="text-xl font-semibold text-gray-700 mt-8 mb-4">My Strengths</h3>
-                <div class="flex flex-wrap mb-10">
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">Data Analysis</span>
-                    <span class="skill-tag">Leadership</span>
-                    <span class="skill-tag">Teaching</span>
-                    <span class="skill-tag">Mathematics</span>
-                    <span class="skill-tag">Programming</span>
-                    <span class="skill-tag">Inspiration</span>
-                    <span class="skill-tag">Logical thinking</span>
+                <div class="about-text-content">
+
+                    <p class="greeting">Hi, I'm Ngô Quý Dương.</p> 
+
+                    <p>
+
+                        My name is Ngô Quý Dương. I’m passionate about mathematics, programming, and analysing data. 
+
+                        I enjoy leading projects, helping others learn, and contributing ideas that make a difference. 
+
+                        My aspiration is to contribute meaningful things and help more people around the world.
+
+                    </p>
+
+                    
+
+                    <div class="skills-tags">
+
+                        <span class="tag">Python</span>
+
+                        <span class="tag">Data Analysis</span>
+
+                        <span class="tag">Leadership</span>
+
+                        <span class="tag">Teaching</span>
+
+                        <span class="tag">Mathematics</span>
+
+                        <span class="tag">Programming</span>
+
+                        <span class="tag">Inspiration</span>
+
+                        <span class="tag">Logical thinking</span>
+
+                    </div>
+
                 </div>
 
-                <!-- NEW: Press Coverage Section -->
-                <div class="mt-8 pt-4 border-t border-gray-200">
-                    <h4 class="text-xl font-bold text-red-600 mb-4 border-b-2 border-red-100 pb-2">Press Coverage</h4>
-                    <ul class="list-none p-0">
-                        <li class="mb-3">
-                            <a href="https://ngoisaohanoi.edu.vn/hanser-ngo-quy-duong-xuat-sac-chinh-phuc-ngoi-vi-thu-khoa-chuyen-toan-thpt-chuyen-khoa-hoc-tu-nhien/" target="_blank" class="press-link">
-                                <span class="link-bullet"></span>
-                                Hanser Ngô Quý Dương xuất sắc chinh phục ngôi vị Thủ khoa Chuyên Toán THPT Chuyên Khoa học Tự nhiên
-                            </a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="https://vnexpress.net/hai-nam-sinh-la-thu-khoa-chuyen-toan-khoa-hoc-tu-nhien-4617109.html" target="_blank" class="press-link">
-                                <span class="link-bullet"></span>
-                                Hai nam sinh là thủ khoa chuyên Toán Khoa học Tự nhiên (VNExpress)
-                            </a>
-                        </li>
-                        <li class="mb-3">
-                            <a href="https://vnexpress.net/chang-thu-khoa-dat-diem-sat-top-1-the-gioi-4945041.html" target="_blank" class="press-link">
-                                <span class="link-bullet"></span>
-                                Chàng thủ khoa đạt điểm SAT top 1% thế giới (VNExpress)
-                            </a>
-                        </li>
-                    </ul>
+
+
+                <div class="about-visuals">
+
+                    <img src="profile.jpg" alt="Ngô Quý Dương Profile Picture" class="profile-pic">
+
                 </div>
-                <!-- END NEW SECTION -->
 
-                <!-- Inspirational Quote -->
-                <p class="text-center italic text-xl text-red-600 mt-12 pt-6 border-t border-red-100">
-                    "You live only once. Live a life you will remember."
-                </p>
 
-            </div>
 
-            <!-- Right Column: Profile Picture -->
-            <div class="md:col-span-1 flex justify-center md:justify-end">
-                <div class="w-64 h-64 bg-gray-200 rounded-lg shadow-lg overflow-hidden border-4 border-white">
-                    <!-- Placeholder for profile picture. Replace 'image_41ace0.jpg' with the actual path if different. -->
-                    <img src="image_41ace0.jpg" alt="Ngô Quý Dương Profile" class="object-cover w-full h-full" onerror="this.onerror=null; this.src='https://placehold.co/256x256/ccc/333?text=Your+Photo';" />
-                </div>
             </div>
 
         </section>
+
+        
+
+        <!-- KHỐI CHÂM NGÔN SỐNG -->
+
+        <div class="quote-container">
+
+            <p class="life-quote">"You live only once. Live a life you will remember."</p>
+
+        </div>
+
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white text-center py-6 mt-12">
-        <div class="max-w-7xl mx-auto px-4">
-            <h3 class="text-lg font-semibold mb-2">Contact me</h3>
-            <p class="text-sm">
-                ✉️ Email: duongngoquy2008@gmail.com
-                <span class="mx-3">|</span>
-                📞 Phone: +84 766692908
-            </p>
-            <p class="text-xs mt-4 opacity-70">
-                &copy; 2025 Ngô Quý Dương. All rights reserved.
-            </p>
+    
+
+    <!-- PHẦN CONTACT FOOTER MỚI -->
+
+    <footer id="contact-footer">
+
+        <div class="contact-info">
+
+            <p>Contact me</p>
+
+            <p>📧 Email: <a href="mailto:duongngoquy2008@gmail.com">duongngoquy2008@gmail.com</a></p>
+
+            <p>📱 Phone: <a href="tel:+84766692908">+84 766692908</a></p>
+
         </div>
+
+        <div class="copyright">
+
+            <p>&copy; 2025 Ngô Quý Dương. All rights reserved.</p>
+
+        </div>
+
     </footer>
 
+
+
 </body>
+
 </html>
