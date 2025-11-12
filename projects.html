@@ -89,6 +89,70 @@
     }
 </style>
 
+    /* --- CSS MỚI CHO FOOTER ĐỂ CĂN CHỈNH CHIỀU RỘNG --- */
+
+/* 1. Thiết lập Footer (kéo dài 100% width, có màu nền) */
+#contact-footer {
+    background-color: #0078d7; /* Màu xanh đậm cho footer */
+    color: white; /* Màu chữ trắng */
+    padding: 30px 0; /* Tăng padding trên và dưới */
+    /* Không giới hạn chiều rộng, mặc định 100% */
+}
+
+/* 2. Thiết lập Khung bọc Nội dung Footer (giới hạn và căn giữa) */
+.footer-content-wrapper {
+    max-width: 900px; /* Giới hạn chiều rộng nội dung (thống nhất với các section khác) */
+    margin: 0 auto; /* Căn giữa khung bọc */
+    padding: 0 20px; /* Thêm padding hai bên để nội dung không chạm mép màn hình mobile */
+    display: flex; /* Bật Flexbox để căn chỉnh Contact Info và Copyright */
+    justify-content: space-between; /* Đẩy Contact Info sang trái, Copyright sang phải */
+    align-items: flex-start; /* Căn chỉnh theo chiều dọc */
+    flex-wrap: wrap; /* Cho phép xuống dòng trên màn hình nhỏ */
+}
+
+/* 3. Căn chỉnh Nội dung Liên hệ */
+.contact-info p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.contact-info p a {
+    color: #ffd700; /* Màu vàng nổi bật cho liên kết */
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contact-info p a:hover {
+    color: #ff9800;
+    text-decoration: underline;
+}
+
+/* 4. Căn chỉnh Copyright */
+.copyright {
+    text-align: right;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+/* Điều chỉnh trên màn hình nhỏ */
+@media (max-width: 640px) {
+    .footer-content-wrapper {
+        flex-direction: column; /* Xếp dọc trên mobile */
+        align-items: center; /* Căn giữa nội dung */
+        text-align: center;
+    }
+
+    .contact-info, .copyright {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .copyright {
+        text-align: center; /* Căn giữa cả copyright */
+        margin-top: 10px;
+    }
+}
+
 <div class="charity-section">
     
     <!-- Tiêu đề lớn -->
@@ -351,18 +415,22 @@
         </div>
     </div>
 </li>
-          
+
+
 <footer id="contact-footer">
-    <div class="contact-info">
-        <p>Contact me</p>
-        <p>📧 Email: <a href="mailto:duongngoquy2008@gmail.com">duongngoquy2008@gmail.com</a></p>
-        <p>📱 Phone: <a href="tel:+84766692908">+84 766692908</a></p>
-    </div>
-    <div class="copyright">
-        <p>&copy; 2025 Ngô Quý Dương. All rights reserved.</p>
+    <!-- Khung BỌC NỘI DUNG MỚI để giới hạn chiều rộng -->
+    <div class="footer-content-wrapper"> 
+        <div class="contact-info">
+            <p><strong>Contact me</strong></p>
+            <p>📧 Email: <a href="mailto:duongngoquy2008@gmail.com">duongngoquy2008@gmail.com</a></p>
+            <p>📱 Phone: <a href="tel:+84766692908">+84 766692908</a></p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Ngô Quý Dương. All rights reserved.</p>
+        </div>
     </div>
 </footer>
-
+          
 </body>
 </html>
     </body>
