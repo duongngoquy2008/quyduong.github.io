@@ -1,13 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Thêm các font chung và quy tắc chung nếu cần */
+        body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; }
+        .section-title-red { color: #e53e3e; text-align: center; font-size: 2.5rem; margin-top: 50px; margin-bottom: 30px; }
+
+        /* CSS cơ bản cho phần mô tả nhóm từ thiện */
+        .charity-section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .charity-section .section-title {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #e53e3e;
+            padding-bottom: 5px;
+            line-height: 1.2;
+        }
+
+        .charity-section .description-text {
+            font-size: 1.125rem;
+            line-height: 1.75;
+            color: #4a4a4a;
+            margin-bottom: 15px;
+        }
+
+        .charity-section .subsection-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1a202c;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .charity-section img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 30px auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* --- CSS MỚI CHO FOOTER ĐỂ CĂN CHỈNH CHIỀU RỘNG --- */
+        
+        /* 1. Thiết lập Footer (kéo dài 100% width, có màu nền) */
+        #contact-footer {
+            background-color: #0078d7; /* Màu xanh đậm cho footer */
+            color: white; /* Màu chữ trắng */
+            padding: 30px 0; /* Tăng padding trên và dưới */
+        }
+
+        /* 2. Thiết lập Khung bọc Nội dung Footer (giới hạn và căn giữa) */
+        .footer-content-wrapper {
+            max-width: 900px; /* Giới hạn chiều rộng nội dung */
+            margin: 0 auto; /* Căn giữa khung bọc */
+            padding: 0 20px; /* Thêm padding hai bên */
+            display: flex;
+            justify-content: space-between; /* Đẩy Contact Info sang trái, Copyright sang phải */
+            align-items: flex-start;
+            flex-wrap: wrap; 
+        }
+
+        /* 3. Căn chỉnh Nội dung Liên hệ */
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+
+        .contact-info p a {
+            color: #ffd700; /* Màu vàng nổi bật cho liên kết */
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-info p a:hover {
+            color: #ff9800;
+            text-decoration: underline;
+        }
+
+        /* 4. Căn chỉnh Copyright */
+        .copyright {
+            text-align: right;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+
+        /* Điều chỉnh trên màn hình nhỏ */
+        @media (max-width: 640px) {
+            .charity-section .section-title {
+                font-size: 1.75rem;
+            }
+            .charity-section .description-text {
+                font-size: 1rem;
+            }
+            .footer-content-wrapper {
+                flex-direction: column; /* Xếp dọc trên mobile */
+                align-items: center; /* Căn giữa nội dung */
+                text-align: center;
+            }
+
+            .contact-info, .copyright {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+            
+            .copyright {
+                text-align: center; /* Căn giữa cả copyright */
+                margin-top: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
 <header>
     <div class="header-content">
         <!-- CHÈN HÌNH ẢNH 1: bigdata.jpg (bên trái) -->
-        <img src="bigdata.jpg" alt="Big Data Icon" class="header-icon left-icon">
+        <img src="bigdata.jpg" onerror="this.onerror=null; this.src='https://placehold.co/100x100/3182CE/ffffff?text=Data';" alt="Big Data Icon" class="header-icon left-icon">
         
         <!-- NỘI DUNG CHỮ CỦA BẠN (Được bọc trong div mới) -->
         <div class="header-text">
@@ -16,7 +132,7 @@
         </div>
         
         <!-- CHÈN HÌNH ẢNH 2: advancedmath.jpg (bên phải) -->
-        <img src="advancedmath.jpg" alt="Advanced Math Icon" class="header-icon right-icon">
+        <img src="advancedmath.jpg" onerror="this.onerror=null; this.src='https://placehold.co/100x100/3182CE/ffffff?text=Math';" alt="Advanced Math Icon" class="header-icon right-icon">
     </div>
 </header>
     <nav>
@@ -25,133 +141,14 @@
         <a href="projects.html">Activities and experiences</a>
     </nav>
     
-  <section id="achievements">
+<section id="achievements">
         <!-- TIÊU ĐỀ MỚI ĐƯỢC THÊM VÀO ĐÂY -->
-  <h2 class="section-title-red">CO-FOUNDER OF THE CHARITY GROUP "<span style="white-space: nowrap;">THAP NANG</span>"</h2>
-
-</ul>
+    <h2 class="section-title-red">CO-FOUNDER OF THE CHARITY GROUP "<span style="white-space: nowrap;">THAP NANG</span>"</h2>
 </section>
 
 <!-- ============================================== -->
 <!-- START: Phần giới thiệu về nhóm từ thiện Thắp Nắng (Revised) -->
 <!-- ============================================== -->
-<style>
-    /* CSS cơ bản cho phần mô tả nhóm từ thiện */
-    .charity-section {
-        max-width: 900px; /* Giới hạn độ rộng như nội dung chính */
-        margin: 40px auto;
-        padding: 0 20px;
-        font-family: 'Inter', sans-serif;
-    }
-
-    .charity-section .section-title {
-        font-size: 2.25rem; /* text-4xl */
-        font-weight: 700;
-        color: #333;
-        margin-bottom: 20px;
-        border-bottom: 3px solid #e53e3e; /* Dùng màu đỏ tương tự red-bar */
-        padding-bottom: 5px;
-        line-height: 1.2;
-    }
-
-    .charity-section .description-text {
-        font-size: 1.125rem; /* text-lg */
-        line-height: 1.75;
-        color: #4a4a4a;
-        margin-bottom: 15px;
-    }
-
-    .charity-section .subsection-title {
-        font-size: 1.5rem; /* text-xl */
-        font-weight: 600;
-        color: #1a202c;
-        margin-top: 30px;
-        margin-bottom: 10px;
-    }
-
-    .charity-section img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-        margin: 30px auto; /* Căn giữa ảnh và tạo khoảng cách */
-        border-radius: 12px;
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Đảm bảo đáp ứng trên mobile */
-    @media (max-width: 640px) {
-        .charity-section .section-title {
-            font-size: 1.75rem;
-        }
-        .charity-section .description-text {
-            font-size: 1rem;
-        }
-    }
-</style>
-
-    /* --- CSS MỚI CHO FOOTER ĐỂ CĂN CHỈNH CHIỀU RỘNG --- */
-
-/* 1. Thiết lập Footer (kéo dài 100% width, có màu nền) */
-#contact-footer {
-    background-color: #0078d7; /* Màu xanh đậm cho footer */
-    color: white; /* Màu chữ trắng */
-    padding: 30px 0; /* Tăng padding trên và dưới */
-    /* Không giới hạn chiều rộng, mặc định 100% */
-}
-
-/* 2. Thiết lập Khung bọc Nội dung Footer (giới hạn và căn giữa) */
-.footer-content-wrapper {
-    max-width: 900px; /* Giới hạn chiều rộng nội dung (thống nhất với các section khác) */
-    margin: 0 auto; /* Căn giữa khung bọc */
-    padding: 0 20px; /* Thêm padding hai bên để nội dung không chạm mép màn hình mobile */
-    display: flex; /* Bật Flexbox để căn chỉnh Contact Info và Copyright */
-    justify-content: space-between; /* Đẩy Contact Info sang trái, Copyright sang phải */
-    align-items: flex-start; /* Căn chỉnh theo chiều dọc */
-    flex-wrap: wrap; /* Cho phép xuống dòng trên màn hình nhỏ */
-}
-
-/* 3. Căn chỉnh Nội dung Liên hệ */
-.contact-info p {
-    margin: 5px 0;
-    font-size: 1.1em;
-}
-
-.contact-info p a {
-    color: #ffd700; /* Màu vàng nổi bật cho liên kết */
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-.contact-info p a:hover {
-    color: #ff9800;
-    text-decoration: underline;
-}
-
-/* 4. Căn chỉnh Copyright */
-.copyright {
-    text-align: right;
-    font-size: 0.9em;
-    opacity: 0.8;
-}
-
-/* Điều chỉnh trên màn hình nhỏ */
-@media (max-width: 640px) {
-    .footer-content-wrapper {
-        flex-direction: column; /* Xếp dọc trên mobile */
-        align-items: center; /* Căn giữa nội dung */
-        text-align: center;
-    }
-
-    .contact-info, .copyright {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-    
-    .copyright {
-        text-align: center; /* Căn giữa cả copyright */
-        margin-top: 10px;
-    }
-}
 
 <div class="charity-section">
     
@@ -178,12 +175,13 @@
     </p>
 
     <!-- Hình ảnh nhóm từ thiện Thắp Nắng -->
-    <img src="thapnang.jpg" alt="Thap Nang Charity Group Photo" loading="lazy">
+    <img src="thapnang.jpg" onerror="this.onerror=null; this.src='https://placehold.co/700x400/0078d7/ffffff?text=Thap+Nang+Group';" alt="Thap Nang Charity Group Photo" loading="lazy">
 </div>
 
 <!-- ============================================== -->
 <!-- END: Phần giới thiệu về nhóm từ thiện Thắp Nắng -->
 <!-- ============================================== -->
+<ul>
 <li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
     <!-- Khung bọc giới hạn chiều rộng cho toàn bộ nội dung của mục này -->
     <div style="max-width: 700px; margin: 0 auto; padding: 0 10px;">
@@ -200,24 +198,26 @@
         <div style="text-align: center;">
             <!-- Ảnh 1: langchoa1.jpg -->
             <img class="zoomable-img" 
-                 src="langchoa1.jpg" 
-                 alt="Thap Nang members visiting Chóa Village, Bac Ninh" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('langchoa1.jpg')" />
+                src="langchoa1.jpg" 
+                onerror="this.onerror=null; this.src='https://placehold.co/700x400/0078d7/ffffff?text=Choa+Village+1';"
+                alt="Thap Nang members visiting Chóa Village, Bac Ninh" 
+                loading="lazy" 
+                style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
+                onclick="openModal('langchoa1.jpg')" />
             
             <!-- Ảnh 2: langchoa2.jpg -->
             <img class="zoomable-img" 
-                 src="langchoa2.jpg" 
-                 alt="Traditional black incense making in Chóa Village" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('langchoa2.jpg')" />
+                src="langchoa2.jpg" 
+                onerror="this.onerror=null; this.src='https://placehold.co/700x400/0078d7/ffffff?text=Choa+Village+2';"
+                alt="Traditional black incense making in Chóa Village" 
+                loading="lazy" 
+                style="width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
+                onclick="openModal('langchoa2.jpg')" />
         </div>
     </div>
 </li>
 
-    <li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
+<li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
     <!-- Khung bọc giới hạn chiều rộng cho toàn bộ nội dung của mục này -->
     <div style="max-width: 700px; margin: 0 auto; padding: 0 10px;">
         
@@ -233,16 +233,17 @@
         <div style="text-align: center;">
             <!-- Ảnh duy nhất: vienhuyethoc.jpg -->
             <img class="zoomable-img" 
-                 src="vienhuyethoc.jpg" 
-                 alt="Volunteers and patients during the charity visit at the National Institute of Hematology" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('vienhuyethoc.jpg')" />
+                src="vienhuyethoc.jpg" 
+                onerror="this.onerror=null; this.src='https://placehold.co/700x400/0078d7/ffffff?text=Hematology+Inst';"
+                alt="Volunteers and patients during the charity visit at the National Institute of Hematology" 
+                loading="lazy" 
+                style="width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
+                onclick="openModal('vienhuyethoc.jpg')" />
         </div>
     </div>
 </li>
 
-    <li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
+<li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
     <!-- Khung bọc giới hạn chiều rộng cho toàn bộ nội dung của mục này -->
     <div style="max-width: 700px; margin: 0 auto; padding: 0 10px;">
         
@@ -258,40 +259,44 @@
         <div style="text-align: center;">
             <!-- Ảnh 1: viennhi1.jpg -->
             <img class="zoomable-img" 
-                 src="viennhi1.jpg" 
-                 alt="Volunteers giving gifts to children at the hospital" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('viennhi1.jpg')" />
+                src="viennhi1.jpg" 
+                onerror="this.onerror=null; this.src='https://placehold.co/700x400/0078d7/ffffff?text=Children+Hospital+1';"
+                alt="Volunteers giving gifts to children at the hospital" 
+                loading="lazy" 
+                style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
+                onclick="openModal('viennhi1.jpg')" />
             
             <!-- Ảnh 2: viennhi2.jpg -->
             <img class="zoomable-img" 
-                 src="viennhi2.jpg" 
-                 alt="Interactive activities with pediatric patients" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('viennhi2.jpg')" />
-                 
+                src="viennhi2.jpg" 
+                onerror="this.onerror=null; this.src='https://placehold.co/700x400/0078d7/ffffff?text=Children+Hospital+2';"
+                alt="Interactive activities with pediatric patients" 
+                loading="lazy" 
+                style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
+                onclick="openModal('viennhi2.jpg')" />
+            
             <!-- Ảnh 3: viennhi3.jpg -->
             <img class="zoomable-img" 
-                 src="viennhi3.jpg" 
-                 alt="Team photo with the hospital staff and children" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('viennhi3.jpg')" />
-
-                        <!-- Ảnh 3: viennhi3.jpg -->
+                src="viennhi3.jpg" 
+                onerror="this.onerror=null; this.src='https://placehold.co/700x400/0078d7/ffffff?text=Children+Hospital+3';"
+                alt="Team photo with the hospital staff and children" 
+                loading="lazy" 
+                style="width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
+                onclick="openModal('viennhi3.jpg')" />
+                        
+            <!-- Ảnh 4: viennhi4.jpg -->
             <img class="zoomable-img" 
-                 src="viennhi4.jpg" 
-                 alt="Team photo with the hospital staff and children" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('viennhi4.jpg')" />
+                src="viennhi4.jpg" 
+                onerror="this.onerror=null; this.src='https://placehold.co/700x400/0078d7/ffffff?text=Children+Hospital+4';"
+                alt="Team photo with the hospital staff and children" 
+                loading="lazy" 
+                style="width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
+                onclick="openModal('viennhi4.jpg')" />
         </div>
     </div>
 </li>
 
-    <li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
+<li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
     <!-- Khung bọc giới hạn chiều rộng cho toàn bộ nội dung của mục này -->
     <div style="max-width: 700px; margin: 0 auto; padding: 0 10px;">
         
@@ -311,24 +316,26 @@
         <div style="text-align: center;">
             <!-- Ảnh 1: saomai.jpg -->
             <img class="zoomable-img" 
-                 src="saomai.jpg" 
-                 alt="Volunteers and children posing with gifts at Sao Mai Center" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('saomai.jpg')" />
+                src="saomai.jpg" 
+                onerror="this.onerror=null; this.src='https://placehold.co/700x400/0078d7/ffffff?text=Sao+Mai+Center+1';"
+                alt="Volunteers and children posing with gifts at Sao Mai Center" 
+                loading="lazy" 
+                style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
+                onclick="openModal('saomai.jpg')" />
             
             <!-- Ảnh 2: saomai2.jpg -->
             <img class="zoomable-img" 
-                 src="saomai2.jpg" 
-                 alt="Children participating in robotics and Rubik's cube workshops" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('saomai2.jpg')" />
+                src="saomai2.jpg" 
+                onerror="this.onerror=null; this.src='https://placehold.co/700x400/0078d7/ffffff?text=Sao+Mai+Center+2';"
+                alt="Children participating in robotics and Rubik's cube workshops" 
+                loading="lazy" 
+                style="width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
+                onclick="openModal('saomai2.jpg')" />
         </div>
     </div>
 </li>
 
-    <li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
+<li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
     <!-- Khung bọc giới hạn chiều rộng cho toàn bộ nội dung của mục này -->
     <div style="max-width: 700px; margin: 0 auto; padding: 0 10px;">
         
@@ -340,35 +347,38 @@
             
             <!-- Ảnh 1: haiduong1.jpg -->
             <img class="zoomable-img" 
-                 src="haiduong1.jpg" 
-                 alt="Volunteers interacting with residents at Hải Dương Social Protection Center" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('haiduong1.jpg')" />
+                src="haiduong1.jpg" 
+                onerror="this.onerror=null; this.src='https://placehold.co/700x400/0078d7/ffffff?text=Hai+Duong+Center+1';"
+                alt="Volunteers interacting with residents at Hải Dương Social Protection Center" 
+                loading="lazy" 
+                style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
+                onclick="openModal('haiduong1.jpg')" />
             
             <!-- Ảnh 2: haiduong2.jpg -->
             <img class="zoomable-img" 
-                 src="haiduong2.jpg" 
-                 alt="Group photo with the center's staff and residents" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('haiduong2.jpg')" />
+                src="haiduong2.jpg" 
+                onerror="this.onerror=null; this.src='https://placehold.co/700x400/0078d7/ffffff?text=Hai+Duong+Center+2';"
+                alt="Group photo with the center's staff and residents" 
+                loading="lazy" 
+                style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
+                onclick="openModal('haiduong2.jpg')" />
 
             <!-- Ảnh 3: haiduong3.jpg -->
             <img class="zoomable-img" 
-                 src="haiduong3.jpg" 
-                 alt="Activity session with the children and elderly at the center" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('haiduong3.jpg')" />
+                src="haiduong3.jpg" 
+                onerror="this.onerror=null; this.src='https://placehold.co/700x400/0078d7/ffffff?text=Hai+Duong+Center+3';"
+                alt="Activity session with the children and elderly at the center" 
+                loading="lazy" 
+                style="width: 100%; height: auto; display: block; margin: 0 auto 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
+                onclick="openModal('haiduong3.jpg')" />
         </div>
     </div>
 </li>
+</ul>
 
-
-      <section id="achievements">
+    <section id="achievements">
         <!-- TIÊU ĐỀ MỚI ĐƯỢC THÊM VÀO ĐÂY -->
-  <h2 class="section-title-red">SPORTS ACTIVITIES </span></h2>
+    <h2 class="section-title-red">SPORTS ACTIVITIES </span></h2>
 
     <li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
     <!-- Khung bọc giới hạn chiều rộng cho toàn bộ nội dung của mục này -->
@@ -391,34 +401,37 @@
             
             <!-- Ảnh 1: bongda1.jpg -->
             <img class="zoomable-img" 
-                 src="bongda1.jpg" 
-                 alt="Football team celebrating a victory" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('bongda1.jpg')" />
+                src="bongda1.jpg" 
+                onerror="this.onerror=null; this.src='https://placehold.co/700x400/0078d7/ffffff?text=Football+1';"
+                alt="Football team celebrating a victory" 
+                loading="lazy" 
+                style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
+                onclick="openModal('bongda1.jpg')" />
             
             <!-- Ảnh 2: bongda2.jpg -->
             <img class="zoomable-img" 
-                 src="bongda2.jpg" 
-                 alt="Action shot during a high school football match" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('bongda2.jpg')" />
+                src="bongda2.jpg" 
+                onerror="this.onerror=null; this.src='https://placehold.co/700x400/0078d7/ffffff?text=Football+2';"
+                alt="Action shot during a high school football match" 
+                loading="lazy" 
+                style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
+                onclick="openModal('bongda2.jpg')" />
 
             <!-- Ảnh 3: bongda3.jpg -->
             <img class="zoomable-img" 
-                 src="bongda3.jpg" 
-                 alt="Football team group photo after tournament" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('bongda3.jpg')" />
+                src="bongda3.jpg" 
+                onerror="this.onerror=null; this.src='https://placehold.co/700x400/0078d7/ffffff?text=Football+3';"
+                alt="Football team group photo after tournament" 
+                loading="lazy" 
+                style="width: 100%; height: auto; display: block; margin: 0 auto 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
+                onclick="openModal('bongda3.jpg')" />
         </div>
     </div>
 </li>
 
-
+<!-- THAY THẾ FOOTER CŨ BẰNG CẤU TRÚC MỚI CÓ WRAPPER -->
 <footer id="contact-footer">
-    <!-- Khung BỌC NỘI DUNG MỚI để giới hạn chiều rộng -->
+    <!-- Khung BỌC NỘI DUNG MỚI để giới hạn chiều rộng 900px -->
     <div class="footer-content-wrapper"> 
         <div class="contact-info">
             <p><strong>Contact me</strong></p>
@@ -430,8 +443,6 @@
         </div>
     </div>
 </footer>
-          
+<!-- KẾT THÚC THAY THẾ FOOTER -->
 </body>
-</html>
-    </body>
 </html>
