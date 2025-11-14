@@ -31,7 +31,60 @@
 
     </nav>
 
+<!-- Phần diễn giải ngắn gọn -->
+        <p class="text-center short-description">
+            Here are some comments and assessments from my high school teachers who have taught and monitored my progress.
+        </p>
 
+        <!-- Container chứa 3 Khung Tài Liệu Mới -->
+        <div class="grid-container mx-auto items-stretch">
+            
+            <!-- Khung 1: Principal's Recommendation Letter -->
+            <div class="document-frame flex flex-col items-center">
+                <h2 class="document-title">Principal's Recommendation Letter</h2>
+                <!-- Ảnh xem trước, có chức năng zoom khi click -->
+                <img 
+                    src="coman.jpg" 
+                    alt="Thư giới thiệu của Hiệu trưởng" 
+                    class="preview-image"
+                    onclick="showModal('Principal\'s Recommendation Letter', 'coman.jpg')"
+                    onerror="this.onerror=null;this.src='https://placehold.co/400x300/e0f2f1/065f46?text=Image+Not+Found'"
+                >
+                <p class="mt-4 text-sm text-gray-500">Bấm vào ảnh để xem chi tiết.</p>
+            </div>
+
+            <!-- Khung 2: Homeroom Teacher's Recommendation Letter -->
+            <div class="document-frame flex flex-col items-center">
+                <h2 class="document-title">Homeroom Teacher's Recommendation Letter</h2>
+                <!-- Ảnh xem trước, có chức năng zoom khi click -->
+                <img 
+                    src="thayhau.jpg" 
+                    alt="Thư giới thiệu của Giáo viên chủ nhiệm" 
+                    class="preview-image"
+                    onclick="showModal('Homeroom Teacher\'s Recommendation Letter', 'thayhau.jpg')"
+                    onerror="this.onerror=null;this.src='https://placehold.co/400x300/e0f2f1/065f46?text=Image+Not+Found'"
+                >
+                <p class="mt-4 text-sm text-gray-500">Bấm vào ảnh để xem chi tiết.</p>
+            </div>
+
+            <!-- Khung 3: Informatics Teacher's Recommendation Letter -->
+            <div class="document-frame flex flex-col items-center">
+                <h2 class="document-title">Informatics Teacher's Recommendation Letter</h2>
+                <!-- Ảnh xem trước, có chức năng zoom khi click -->
+                <img 
+                    src="thaykhoi.jpg" 
+                    alt="Thư giới thiệu của Giáo viên Tin học" 
+                    class="preview-image"
+                    onclick="showModal('Informatics Teacher\'s Recommendation Letter', 'thaykhoi.jpg')"
+                    onerror="this.onerror=null;this.src='https://placehold.co/400x300/e0f2f1/065f46?text=Image+Not+Found'"
+                >
+                <p class="mt-4 text-sm text-gray-500">Bấm vào ảnh để xem chi tiết.</p>
+            </div>
+        </div>
+    
+
+
+  
 <footer id="contact-footer">
     <!-- Khung BỌC NỘI DUNG MỚI để giới hạn chiều rộng -->
     <div class="footer-content-wrapper"> 
