@@ -491,4 +491,14 @@ a:hover {
     padding: 20px;
 }
 
+#contact-footer {
+    width: 100%;
+    background-color: #f8f9fa; /* Màu nền của footer */
+}
+
+.footer-content-wrapper {
+    max-width: 1200px; /* Chỉ giới hạn nội dung bên trong */
+    margin: 0 auto;
+    padding: 20px;
+}
 
