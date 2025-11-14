@@ -490,3 +490,12 @@ a:hover {
     margin: 0 auto;       /* căn giữa */
     padding: 20px;
 }
+
+#contact-footer {
+    width: 100vw !important;
+    margin-left: calc(-50vw + 50%) !important;
+    background-color: #f8f9fa;
+    padding: 30px 0;
+    margin-top: 40px;
+    box-sizing: border-box;
+}
