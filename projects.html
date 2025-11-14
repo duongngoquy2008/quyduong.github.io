@@ -214,8 +214,8 @@
         
         <!-- Mô tả với icon và font-weight (hoặc màu sắc) để làm nổi bật thành tích -->
         <p style="font-size: 1.1em; line-height: 1.6; text-align: justify; margin-bottom: 25px; padding: 0 10px;">
-            <span style="font-size: 1.5em; color: #cc6600; vertical-align: middle; margin-right: 10px;">🕯️🤝</span> 
-            I led a successful social enterprise initiative by organizing an in-school sale of traditional black incense. We **sourced the product directly from Chóa Village in Bắc Ninh**, ensuring authenticity and supporting local artisans. We strategically leveraged a major event at Newton School, timing the sale with the Lunar New Year when demand rises significantly among Vietnamese families. This project demonstrated my ability to **execute a full business cycle**, from supply chain management to targeted marketing and customer education. Crucially, **all profits generated were dedicated to charitable activities**, combining entrepreneurial skill with social responsibility.
+            <span style="font-size: 1.5em; color: #cc6600; vertical-align: middle; margin-right: 10px;"></span> 
+            Our charity group organized an in-school sale of traditional black incense. We sourced the product directly from Chóa Village in Bắc Ninh. We  leveraged a major event at Newton School, timing the sale with the Lunar New Year when demand rises significantly among Vietnamese families. Moreover, all profits generated were dedicated to charitable activities, with the aim of helping the disadvantaged people in Vietnam.
         </p>
         
         <!-- Khối ảnh xếp dọc -->
@@ -728,7 +728,7 @@
     <div style="max-width: 700px; margin: 0 auto; padding: 0 10px;">
         
         <!-- Tiêu đề màu xanh lá cây đậm (tương đồng với VinUni), to vừa, căn giữa -->
-        <h3 style="color: #00703c; text-align: center; font-size: 1.8em; margin-bottom: 30px;">Participated in VinUniversity Open Day 2025</h3>
+        <h3 style="color: #0078d7; text-align: center; font-size: 1.8em; margin-bottom: 30px;">Participated in VinUniversity Open Day 2025</h3>
         
         <!-- Mô tả với icon và font-weight (hoặc màu sắc) để làm nổi bật thành tích -->
         <p style="font-size: 1.1em; line-height: 1.6; text-align: justify; margin-bottom: 25px; padding: 0 10px;">
@@ -765,7 +765,47 @@
         </div>
     </div>
 </footer>
-          
+          <!-- CẤU TRÚC MODAL (LIGHTBOX) VÀ SCRIPT ĐÃ ĐƯỢC CHUYỂN VÀO CUỐI BODY -->
+<!-- Cấu trúc Modal (Lightbox) -->
+<div id="imageModal" class="modal-overlay" onclick="closeModal()">
+    <!-- Nút đóng -->
+    <span class="close-btn" onclick="closeModal(event)">&times;</span>
+    <!-- Ảnh sẽ được hiển thị ở đây -->
+    <img class="modal-content" id="img01">
+</div>
+
+<script>
+    // Lấy Modal và các phần tử
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("img01");
+
+    // Hàm mở Modal
+    function openModal(imageSrc) {
+        modal.style.display = "flex"; // Hiển thị Modal (dùng flex để căn giữa)
+        modalImg.src = imageSrc;      // Thiết lập nguồn ảnh
+    }
+
+    // Hàm đóng Modal
+    function closeModal(event) {
+        // Kiểm tra nếu click vào nút đóng (x) hoặc lớp phủ nền (modal-overlay)
+        // Nếu click vào ảnh (modalImg) thì không đóng
+        if (!event || event.target === modal || event.target.classList.contains('close-btn')) {
+             modal.style.display = "none";
+        }
+    }
+
+    // Gắn sự kiện click cho tất cả ảnh có class 'zoomable-img'
+    document.addEventListener('DOMContentLoaded', () => {
+        const images = document.querySelectorAll('.zoomable-img');
+        images.forEach(img => {
+            img.style.cursor = 'pointer'; // Thêm hiệu ứng chuột
+            img.addEventListener('click', () => {
+                openModal(img.src);
+            });
+        });
+    });
+</script>
+
 </body>
 </html>
     </body>
