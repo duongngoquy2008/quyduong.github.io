@@ -1,927 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Activities and experiences</title>
-
+    <title>Activities and experiences | Ngô Quý Dương</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> 
-
 </head>
-
 <body>
-<header>
-    <div class="header-content">
-        <!-- CHÈN HÌNH ẢNH 1: bigdata.jpg (bên trái) -->
-        <img src="bigdata.jpg" alt="Big Data Icon" class="header-icon left-icon">
-        
-        <!-- NỘI DUNG CHỮ CỦA BẠN (Được bọc trong div mới) -->
-        <div class="header-text">
-            <h1>Ngô Quý Dương</h1>
-            <p>Student | Math & Data Science Enthusiast | Future Innovator</p>
+    <header>
+        <div class="header-content">
+            <img src="bigdata.jpg" alt="Big Data Icon" class="header-icon left-icon">
+            <div class="header-text">
+                <h1>Ngô Quý Dương</h1>
+                <p>Student | Math & Data Science Enthusiast | Future Innovator</p>
+            </div>
+            <img src="advancedmath.jpg" alt="Advanced Math Icon" class="header-icon right-icon">
         </div>
-        
-        <!-- CHÈN HÌNH ẢNH 2: advancedmath.jpg (bên phải) -->
-        <img src="advancedmath.jpg" alt="Advanced Math Icon" class="header-icon right-icon">
-    </div>
-</header>
+    </header>
+
     <nav>
-
         <a href="index.html">About me</a>
-
         <a href="achievements.html">Academic awards and achievements</a>
-
         <a href="projects.html">Activities and experiences</a>
-
-           <a href="recommend.html">Recommendation letters</a>
-
+        <a href="recommend.html">Recommendation letters</a>
     </nav>
-<section id="projects">
-<div class="experience-value-statement" style="
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 30px;
-    border-radius: 12px;
-    background-color: #f7fff7; /* Nền xanh lá nhạt nhẹ nhàng */
-    border: 3px solid #00703c; /* Khung xanh lá đậm (giống VinUni) */
-    box-shadow: 0 4px 12px rgba(0, 112, 60, 0.1); /* Bóng mờ màu xanh */
-">
-    <h2 style="
-        font-size: 1.5em;
-        color: #004d33; /* Xanh đậm hơn cho tiêu đề */
-        text-align: center;
-        margin-bottom: 20px;
-        font-weight: 700;
-    ">
-        My Personal Philosophy on Experiences
-    </h2>
-    <div style="
-        font-size: 1.05em;
-        line-height: 1.7;
-        color: #2c5236; /* Màu chữ xanh đậm dễ đọc */
-        text-align: justify;
-    ">
-        <p style="margin-bottom: 15px;">
-            Every experience has given me invaluable lessons. My charitable activities with the "Thắp Nắng"  group are not merely an expression of our affection for less fortunate children and peers, but also made me realize that each of us must contribute our own small part to collectively build a better world. These actions also help us become more grateful for what we have. Whenever I face difficulties or pressure in my studies and life, I look back on these experiences and motivate myself for one simple reason: the life I have are the dream of countless other children who only wish for an ordinary life. Therefore, as I grew up, I do not easily give up upon challenges as I did before anymore.
-        </p>
-        <p style="margin-bottom: 15px;">
-            Participating in sports activities not only improves my health but also helps me bond with a team and learn the essential skills needed to build a united, strong community that works towards a common goal.
-        </p>
-        <p style="margin-bottom: 15px;">
-            Visits and experiential activities in academic and professional environments have given me broader perspectives on various careers, thereby helping me build a more solid foundation for my future career path.
-        </p>
-        <p style="
-            margin-bottom: 0;
-            font-style: italic;
-            font-weight: 600;
-            color: #00703c; /* Màu xanh lá nổi bật cho câu kết */
-            text-align: center;
-        ">
-            To me, every single experience is precious, and together, they will form the accumulated assets I carry on my journey to conquer the summits that lie ahead.
-        </p>
-    </div>
-</div>
-    
 
-        <!-- TIÊU ĐỀ MỚI ĐƯỢC THÊM VÀO ĐÂY -->
-  <h2 class="section-title-red">CO-FOUNDER OF THE CHARITY GROUP "<span style="white-space: nowrap;">THAP NANG</span>"</h2>
-
-
-
-<!-- ============================================== -->
-<!-- START: Phần giới thiệu về nhóm từ thiện Thắp Nắng (Revised) -->
-<!-- ============================================== -->
-<style>
-    /* CSS cơ bản cho phần mô tả nhóm từ thiện */
-    .charity-section {
-        max-width: 900px; /* Giới hạn độ rộng như nội dung chính */
-        margin: 40px auto;
-        padding: 0 20px;
-        font-family: 'Inter', sans-serif;
-    }
-
-    .charity-section .section-title {
-        font-size: 2.25rem; /* text-4xl */
-        font-weight: 700;
-        color: #333;
-        margin-bottom: 20px;
-        border-bottom: 3px solid #e53e3e; /* Dùng màu đỏ tương tự red-bar */
-        padding-bottom: 5px;
-        line-height: 1.2;
-    }
-
-    .charity-section .description-text {
-        font-size: 1.125rem; /* text-lg */
-        line-height: 1.75;
-        color: #4a4a4a;
-        margin-bottom: 15px;
-    }
-
-    .charity-section .subsection-title {
-        font-size: 1.5rem; /* text-xl */
-        font-weight: 600;
-        color: #1a202c;
-        margin-top: 30px;
-        margin-bottom: 10px;
-    }
-
-    .charity-section img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-        margin: 30px auto; /* Căn giữa ảnh và tạo khoảng cách */
-        border-radius: 12px;
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Đảm bảo đáp ứng trên mobile */
-    @media (max-width: 640px) {
-        .charity-section .section-title {
-            font-size: 1.75rem;
-        }
-        .charity-section .description-text {
-            font-size: 1rem;
-        }
-    }
-</style>
-
-
-<div class="charity-section">
-    
-    <!-- Tiêu đề lớn -->
-    <h2 class="section-title">
-        About "Thap Nang" (Thắp Nắng)
-    </h2>
-
-    <!-- Đoạn mô tả chính -->
-    <p class="description-text">
-        The charity group "Thap Nang" was founded in January 2024 by a group of former primary school classmates from different high schools in Hanoi. We came together with the shared goal of spreading love and supporting underprivileged communities across Vietnam.
-    </p>
-
-    <p class="description-text">
-        After nearly two years of operation, we have successfully organized several charitable trips to various provinces throughout the Vietnam.
-    </p>
-    
-    <!-- Tiêu đề phụ: Hoạt động chính -->
-    <h3 class="subsection-title">Our Mission and Activities</h3>
-    
-    <!-- Mô tả hoạt động bán hàng gây quỹ -->
-    <p class="description-text">
-        Our main activity involves the sale of Chóa village (Bắc Ninh) traditional incense products. All profits are used to fund our charity trips. We chose this product not only for its health benefits as a clean, natural incense, but also to help preserve the traditional incense-making craft of Chóa Village in Bắc Ninh.
-    </p>
-
-    <!-- Hình ảnh nhóm từ thiện Thắp Nắng -->
-    <img src="thapnang.jpg" alt="Thap Nang Charity Group Photo" loading="lazy">
-</div>
-
-<!-- ============================================== -->
-<!-- END: Phần giới thiệu về nhóm từ thiện Thắp Nắng -->
-<!-- ============================================== -->
-    </ul>
-<li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
-    <!-- Khung bọc giới hạn chiều rộng cho toàn bộ nội dung của mục này -->
-    <div style="max-width: 700px; margin: 0 auto; padding: 0 10px;">
+    <!-- Dùng chung class container của trang Achievements để đồng bộ giao diện -->
+    <main id="achievements-page">
         
-        <!-- Tiêu đề màu xanh, to vừa, căn giữa -->
-        <h3 style="color: #0078d7; text-align: center; font-size: 1.8em; margin-bottom: 15px;">Visited Chóa village, Bắc Ninh</h3>
-        
-        <!-- Đoạn mô tả màu đen thông thường, căn đều hai bên (justify) -->
-        <p style="color: #333; font-size: 1.1em; line-height: 1.6; margin-bottom: 20px; text-align: justify;">
-            Our field trip to Chóa Village in Bắc Ninh was truly unforgettable. We visited to learn about the traditional process of making their famous black incense and had an opportunity to try making it ourselves. This valuable experience helped us appreciate this tradition of Chóa Village. Moreover, by using only natural ingredients and no chemicals, the village contributes to protecting consumers' health.
-        </p>
-        
-        <!-- Hình ảnh hoạt động (xếp dọc), sử dụng max-width của div bọc -->
-        <div style="text-align: center;">
-            <!-- Ảnh 1: langchoa1.jpg -->
-            <img class="zoomable-img" 
-                 src="langchoa1.jpg" 
-                 alt="Thap Nang members visiting Chóa Village, Bac Ninh" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('langchoa1.jpg')" />
-            
-            <!-- Ảnh 2: langchoa2.jpg -->
-            <img class="zoomable-img" 
-                 src="langchoa2.jpg" 
-                 alt="Traditional black incense making in Chóa Village" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('langchoa2.jpg')" />
-        </div>
-    </div>
-</li>
-
-<li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
-    <!-- Khung bọc giới hạn chiều rộng cho toàn bộ nội dung của mục này -->
-    <div style="max-width: 700px; margin: 0 auto; padding: 0 10px;">
-        
-        <!-- Tiêu đề màu nâu/cam ấm, to vừa, căn giữa -->
-        <h3 style="color: #0078d7; text-align: center; font-size: 1.8em; margin-bottom: 30px;">Organized an in-school sale of black incense</h3>
-        
-        <!-- Mô tả với icon và font-weight (hoặc màu sắc) để làm nổi bật thành tích -->
-        <p style="font-size: 1.1em; line-height: 1.6; text-align: justify; margin-bottom: 25px; padding: 0 10px;">
-            <span style="font-size: 1.5em; color: #cc6600; vertical-align: middle; margin-right: 10px;"></span> 
-            Our charity group organized an in-school sale of traditional black incense. We sourced the product directly from Chóa Village in Bắc Ninh. We  leveraged a major event at Newton School, timing the sale with the Lunar New Year when demand rises significantly among Vietnamese families. Moreover, all profits generated were dedicated to charitable activities, with the aim of helping the disadvantaged people in Vietnam.
-        </p>
-        
-        <!-- Khối ảnh xếp dọc -->
-        <div style="text-align: center;">
-            
-            <!-- Ảnh 1: banhuong1.jpg -->
-            <img class="zoomable-img" 
-                src="banhuong1.jpg" 
-                onerror="this.onerror=null; this.src='https://placehold.co/700x400/9a6324/ffffff?text=Incense+Sale+Project';"
-                alt="Photo of the incense sale initiative" 
-                loading="lazy" 
-                style="width: 100%; height: auto; display: block; margin: 0 auto 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                onclick="openModal('banhuong1.jpg')" />
-        </div>
-    </div>
-</li>
-    
-    <li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
-    <!-- Khung bọc giới hạn chiều rộng cho toàn bộ nội dung của mục này -->
-    <div style="max-width: 700px; margin: 0 auto; padding: 0 10px;">
-        
-        <!-- Tiêu đề màu xanh, to vừa, căn giữa -->
-        <h3 style="color: #0078d7; text-align: center; font-size: 1.8em; margin-bottom: 15px;">Charity visit to the National Institute of Hematology and Blood Transfusion</h3>
-        
-        <!-- Đoạn mô tả màu đen thông thường, căn đều hai bên (justify) -->
-        <p style="color: #333; font-size: 1.1em; line-height: 1.6; margin-bottom: 20px; text-align: justify;">
-            We organized a meaningful charity visit to the National Institute of Hematology and Blood Transfusion to support pediatric patients undergoing long-term treatment. The team prepared gifts, small financial aid, and interactive activities aimed at bringing cheer and motivation to the children and their families. This activity is not only aimed at making a small contribution to support less fortunate children, but through it, our group also became more aware of the importance of health and felt truly fortunate to be able to study and live normally.
-        </p>
-        
-        <!-- Hình ảnh hoạt động (xếp dọc), sử dụng max-width của div bọc -->
-        <div style="text-align: center;">
-            <!-- Ảnh duy nhất: vienhuyethoc.jpg -->
-            <img class="zoomable-img" 
-                 src="vienhuyethoc.jpg" 
-                 alt="Volunteers and patients during the charity visit at the National Institute of Hematology" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('vienhuyethoc.jpg')" />
-        </div>
-    </div>
-</li>
-
-    <li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
-    <!-- Khung bọc giới hạn chiều rộng cho toàn bộ nội dung của mục này -->
-    <div style="max-width: 700px; margin: 0 auto; padding: 0 10px;">
-        
-        <!-- Tiêu đề màu xanh, to vừa, căn giữa -->
-        <h3 style="color: #0078d7; text-align: center; font-size: 1.8em; margin-bottom: 15px;">Charity visit to the National Children's Hospital</h3>
-        
-        <!-- Đoạn mô tả màu đen thông thường, căn đều hai bên (justify) -->
-        <p style="color: #333; font-size: 1.1em; line-height: 1.6; margin-bottom: 20px; text-align: justify;">
-           Born healthy and privileged to receive the best education, our group always focuses on children—not only because they are at an age we have just experienced ourselves, but also because they represent the future of our country. Sharing a part of our fortune with them is not only an act of compassion but also a reflection of the younger generation’s responsibility toward the more vulnerable in society.
-        </p>
-        
-        <!-- Hình ảnh hoạt động (xếp dọc), sử dụng max-width của div bọc -->
-        <div style="text-align: center;">
-            <!-- Ảnh 1: viennhi1.jpg -->
-            <img class="zoomable-img" 
-                 src="viennhi1.jpg" 
-                 alt="Volunteers giving gifts to children at the hospital" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('viennhi1.jpg')" />
-            
-            <!-- Ảnh 2: viennhi2.jpg -->
-            <img class="zoomable-img" 
-                 src="viennhi2.jpg" 
-                 alt="Interactive activities with pediatric patients" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('viennhi2.jpg')" />
-                 
-            <!-- Ảnh 3: viennhi3.jpg -->
-            <img class="zoomable-img" 
-                 src="viennhi3.jpg" 
-                 alt="Team photo with the hospital staff and children" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('viennhi3.jpg')" />
-
-                        <!-- Ảnh 3: viennhi3.jpg -->
-            <img class="zoomable-img" 
-                 src="viennhi4.jpg" 
-                 alt="Team photo with the hospital staff and children" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('viennhi4.jpg')" />
-        </div>
-    </div>
-</li>
-
-    <li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
-    <!-- Khung bọc giới hạn chiều rộng cho toàn bộ nội dung của mục này -->
-    <div style="max-width: 700px; margin: 0 auto; padding: 0 10px;">
-        
-        <!-- Tiêu đề màu xanh, to vừa, căn giữa -->
-        <h3 style="color: #0078d7; text-align: center; font-size: 1.8em; margin-bottom: 15px;">Charity visit to Sao Mai Care Center in Vĩnh Phúc Province</h3>
-        
-        <!-- Đoạn mô tả màu đen thông thường, căn đều hai bên (justify) -->
-        <p style="color: #333; font-size: 1.1em; line-height: 1.6; margin-bottom: 20px; text-align: justify;">
-            After successfully organizing charity trips in Hanoi, we decided to expand our reach to neighboring provinces. Our visit to the Sao Mai Care Center in Vĩnh Phúc was a meaningful experience. We brought small gifts with the hope of supporting the orphaned children living there.
-        </p>
-        
-        <p style="color: #333; font-size: 1.1em; line-height: 1.6; margin-bottom: 20px; text-align: justify;">
-            Besides, we collaborated with several other projects to introduce the children to robotics and Rubik's cubes. This aimed to provide them with access to new experiences and inspire curiosity.
-        </p>
-        
-        <!-- Hình ảnh hoạt động (xếp dọc), sử dụng max-width của div bọc -->
-        <div style="text-align: center;">
-            <!-- Ảnh 1: saomai.jpg -->
-            <img class="zoomable-img" 
-                 src="saomai.jpg" 
-                 alt="Volunteers and children posing with gifts at Sao Mai Center" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('saomai.jpg')" />
-            
-            <!-- Ảnh 2: saomai2.jpg -->
-            <img class="zoomable-img" 
-                 src="saomai2.jpg" 
-                 alt="Children participating in robotics and Rubik's cube workshops" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('saomai2.jpg')" />
-
-                        <!-- Ảnh 3: haiduong3.jpg -->
-            <img class="zoomable-img" 
-                 src="haiduong3.jpg" 
-                 alt="Activity session with the children and elderly at the center" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('haiduong3.jpg')" />
-        </div>
-    </div>
-</li>
-
-    <li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
-    <!-- Khung bọc giới hạn chiều rộng cho toàn bộ nội dung của mục này -->
-    <div style="max-width: 700px; margin: 0 auto; padding: 0 10px;">
-        
-        <!-- Tiêu đề màu xanh, to vừa, căn giữa -->
-        <h3 style="color: #0078d7; text-align: center; font-size: 1.8em; margin-bottom: 30px;">Charity visit to the Social Protection Center of Hải Dương Province</h3>
-        
-        <!-- Khối ảnh xếp dọc (dùng display: block cho mỗi ảnh để chúng xếp chồng lên nhau) -->
-        <div style="text-align: center;">
-            
-            <!-- Ảnh 1: haiduong1.jpg -->
-            <img class="zoomable-img" 
-                 src="haiduong1.jpg" 
-                 alt="Volunteers interacting with residents at Hải Dương Social Protection Center" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('haiduong1.jpg')" />
-            
-            <!-- Ảnh 2: haiduong2.jpg -->
-            <img class="zoomable-img" 
-                 src="haiduong2.jpg" 
-                 alt="Group photo with the center's staff and residents" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('haiduong2.jpg')" />
-
-                        <!-- Ảnh 1: camonhaiduong.jpg -->
-            <img class="zoomable-img" 
-                src="camonhaiduong.jpg" 
-                onerror="this.onerror=null; this.src='https://placehold.co/700x400/1e8449/ffffff?text=Tu+Thien+Hai+Duong';"
-                alt="Hình ảnh hoạt động từ thiện tại Hải Dương" 
-                loading="lazy" 
-                style="width: 100%; height: auto; display: block; margin: 0 auto 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                onclick="openModal('camonhaiduong.jpg')" />
-
-        </div>
-    </div>
-</li>
-
-
-      <section id="achievements">
-        <!-- TIÊU ĐỀ MỚI ĐƯỢC THÊM VÀO ĐÂY -->
-  <h2 class="section-title-red">SPORTS ACTIVITIES </span></h2>
-
-    <li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
-    <!-- Khung bọc giới hạn chiều rộng cho toàn bộ nội dung của mục này -->
-    <div style="max-width: 700px; margin: 0 auto; padding: 0 10px;">
-        
-        <!-- Tiêu đề màu xanh, to vừa, căn giữa -->
-        <h3 style="color: #0078d7; text-align: center; font-size: 1.8em; margin-bottom: 30px;">Participated in football tournaments from primary school to high school</h3>
-        
-        <!-- Mô tả với icon và font-weight (hoặc màu sắc) để làm nổi bật thành tích -->
-        <p style="font-size: 1.1em; line-height: 1.6; text-align: justify; margin-bottom: 25px; padding: 0 10px;">
-            <span style="font-size: 1.5em; color: #108a00; vertical-align: middle; margin-right: 10px;"></span> 
-            I have developed a great passion for football since I was very young and have been a key player in my class team. Over the years, I have earned several achievements, including 
-          three consecutive school championships in lower secondary school, followed by a 
-            third-place finish in 10th grade and a 
-           second-place finish in 11th grade.
-        </p>
-        
-        <!-- Khối ảnh xếp dọc -->
-        <div style="text-align: center;">
-            
-            <!-- Ảnh 1: bongda1.jpg -->
-            <img class="zoomable-img" 
-                 src="bongda1.jpg" 
-                 alt="Football team celebrating a victory" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('bongda1.jpg')" />
-            
-            <!-- Ảnh 2: bongda2.jpg -->
-            <img class="zoomable-img" 
-                 src="bongda2.jpg" 
-                 alt="Action shot during a high school football match" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('bongda2.jpg')" />
-
-            <!-- Ảnh 3: bongda3.jpg -->
-            <img class="zoomable-img" 
-                 src="bongda3.jpg" 
-                 alt="Football team group photo after tournament" 
-                 loading="lazy" 
-                 style="width: 100%; height: auto; display: block; margin: 0 auto 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                 onclick="openModal('bongda3.jpg')" />
-        </div>
-    </div>
-</li>
-
-<li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
-    <!-- Khung bọc giới hạn chiều rộng cho toàn bộ nội dung của mục này -->
-    <div style="max-width: 700px; margin: 0 auto; padding: 0 10px;">
-        
-        <!-- Tiêu đề màu xanh, to vừa, căn giữa -->
-        <h3 style="color: #0078d7; text-align: center; font-size: 1.8em; margin-bottom: 30px;">Participated in the community run "Vietnam Airlines Run For Love 2025" hosted by Vietnam Airlines</h3>
-        
-        <!-- Mô tả ngắn gọn (do yêu cầu không có) -->
-        <p style="font-size: 1.1em; line-height: 1.6; text-align: justify; margin-bottom: 25px; padding: 0 10px;">
-            <span style="font-size: 1.5em; color: #e53e3e; vertical-align: middle; margin-right: 10px;"></span> 
-            Participating in this race not only helps improve health but also contributes a small amount of funding to support People with Disabilities.
-
-
-        
-        <!-- Khối ảnh xếp dọc -->
-        <div style="text-align: center;">
-            
-            <!-- Ảnh 1: VNA.jpg -->
-            <img class="zoomable-img" 
-                src="VNA.jpg" 
-                onerror="this.onerror=null; this.src='https://placehold.co/700x400/E53E3E/ffffff?text=Run+For+Love+1';"
-                alt="Run For Love 2025 event" 
-                loading="lazy" 
-                style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                onclick="openModal('VNA.jpg')" />
-            
-            <!-- Ảnh 2: VNA2.jpg -->
-            <img class="zoomable-img" 
-                src="VNA2.jpg" 
-                onerror="this.onerror=null; this.src='https://placehold.co/700x400/E53E3E/ffffff?text=Run+For+Love+2';"
-                alt="Runner taking part in the charity run" 
-                loading="lazy" 
-                style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                onclick="openModal('VNA2.jpg')" />
-
-            <!-- Ảnh 3: VNA3.jpg -->
-            <img class="zoomable-img" 
-                src="VNA3.jpg" 
-                onerror="this.onerror=null; this.src='https://placehold.co/700x400/E53E3E/ffffff?text=Run+For+Love+3';"
-                alt="Group photo at the finish line" 
-                loading="lazy" 
-                style="width: 100%; height: auto; display: block; margin: 0 auto 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                onclick="openModal('VNA3.jpg')" />
-
-                        <!-- Ảnh 1: runforlove.jpg -->
-            <img class="zoomable-img" 
-                src="runforlove.jpg" 
-                onerror="this.onerror=null; this.src='https://placehold.co/700x400/c00/ffffff?text=VNA+Run+For+Love';"
-                alt="Photo from the VNA Run For Love event" 
-                loading="lazy" 
-                style="width: 100%; height: auto; display: block; margin: 0 auto 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                onclick="openModal('runforlove.jpg')" />
-        </div>
-    </div>
-</li>
-
-
-            <h2 class="section-title-red">OTHER ACTIVITIES</span>"</h2>
-
-          <li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
-    <!-- Khung bọc giới hạn chiều rộng cho toàn bộ nội dung của mục này -->
-    <div style="max-width: 700px; margin: 0 auto; padding: 0 10px;">
-        
-        <!-- Tiêu đề màu xanh, to vừa, căn giữa -->
-        <h3 style="color: #0078d7; text-align: center; font-size: 1.8em; margin-bottom: 30px;">Competed in the "Super Mental Calculation" contest organized by Vietnam Television (VTV) (Grade 5)</h3>
-        
-        <!-- Mô tả với icon và font-weight (hoặc màu sắc) để làm nổi bật thành tích -->
-        <p style="font-size: 1.1em; line-height: 1.6; text-align: justify; margin-bottom: 25px; padding: 0 10px;">
-            <span style="font-size: 1.5em; color: #ff9800; vertical-align: middle; margin-right: 10px;"></span> 
-          Participating in VTV's "Super Mental Math" intellectual contest was a memorable experience, highlighted by a spectacular comeback in the final round. It was the first time I had ever been on a TV show.
-        </p>
-        
-        <!-- Khối ảnh xếp dọc -->
-        <div style="text-align: center;">
-            
-            <!-- Ảnh 1: sieutinhnham1.jpg -->
-            <img class="zoomable-img" 
-                src="sieutinhnham1.jpg" 
-                onerror="this.onerror=null; this.src='https://placehold.co/700x400/FF9800/ffffff?text=VTV+Contest+1';"
-                alt="Contestant performing mental calculation" 
-                loading="lazy" 
-                style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                onclick="openModal('sieutinhnham1.jpg')" />
-            
-            <!-- Ảnh 2: sieutinhnham2.jpg -->
-            <img class="zoomable-img" 
-                src="sieutinhnham2.jpg" 
-                onerror="this.onerror=null; this.src='https://placehold.co/700x400/FF9800/ffffff?text=VTV+Contest+2';"
-                alt="Receiving certificate or award at the contest" 
-                loading="lazy" 
-                style="width: 100%; height: auto; display: block; margin: 0 auto 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                onclick="openModal('sieutinhnham2.jpg')" />
-        </div>
-    </div>
-</li>
-
-          <li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
-    <!-- Khung bọc giới hạn chiều rộng cho toàn bộ nội dung của mục này -->
-    <div style="max-width: 700px; margin: 0 auto; padding: 0 10px;">
-        
-        <!-- Tiêu đề màu xanh, to vừa, căn giữa -->
-        <h3 style="color: #0078d7; text-align: center; font-size: 1.8em; margin-bottom: 30px;">Volunteered to support a charity event organized by Newton Robotics Club in Nam Định Province</h3>
-        
-        <!-- Mô tả với icon và font-weight (hoặc màu sắc) để làm nổi bật thành tích -->
-        <p style="font-size: 1.1em; line-height: 1.6; text-align: justify; margin-bottom: 25px; padding: 0 10px;">
-            <span style="font-size: 1.5em; color: #17a2b8; vertical-align: middle; margin-right: 10px;"></span> 
-            We organized this event with the goal of bringing robotics to children in Nam Định province. Witnessing their excitement when being introduced to such a novel field was a joyful and memorable experience for me. This initiative highlighted the importance of community outreach and using technology as a tool for inspiring the next generation.
-        </p>
-        
-        <!-- Khối ảnh xếp dọc -->
-        <div style="text-align: center;">
-            
-            <!-- Ảnh 1: namdinh3.jpg (đầu tiên) -->
-            <img class="zoomable-img" 
-                src="namdinh3.jpg" 
-                onerror="this.onerror=null; this.src='https://placehold.co/700x400/28a745/ffffff?text=Nam+Dinh+Robotics+1';"
-                alt="Volunteering with children in Nam Dinh" 
-                loading="lazy" 
-                style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                onclick="openModal('namdinh3.jpg')" />
-            
-            <!-- Ảnh 2: namdinh2.jpg (thứ hai) -->
-            <img class="zoomable-img" 
-                src="namdinh2.jpg" 
-                onerror="this.onerror=null; this.src='https://placehold.co/700x400/28a745/ffffff?text=Nam+Dinh+Robotics+2';"
-                alt="Introducing robotics to local children" 
-                loading="lazy" 
-                style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                onclick="openModal('namdinh2.jpg')" />
-
-            <!-- Ảnh 3: namdinh1.jpg (cuối cùng) -->
-            <img class="zoomable-img" 
-                src="namdinh1.jpg" 
-                onerror="this.onerror=null; this.src='https://placehold.co/700x400/28a745/ffffff?text=Nam+Dinh+Robotics+3';"
-                alt="Group photo at the charity event" 
-                loading="lazy" 
-                style="width: 100%; height: auto; display: block; margin: 0 auto 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                onclick="openModal('namdinh1.jpg')" />
-        </div>
-    </div>
-</li>
-
-          <li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
-    <!-- Khung bọc giới hạn chiều rộng cho toàn bộ nội dung của mục này -->
-    <div style="max-width: 700px; margin: 0 auto; padding: 0 10px;">
-        
-        <!-- Tiêu đề màu xanh/tím chuyên nghiệp, to vừa, căn giữa -->
-        <h3 style="color: #0078d7; text-align: center; font-size: 1.8em; margin-bottom: 30px;">An educational tour and learning experience at FPT Company</h3>
-        
-        <!-- Mô tả với icon và font-weight (hoặc màu sắc) để làm nổi bật thành tích -->
-        <p style="font-size: 1.1em; line-height: 1.6; text-align: justify; margin-bottom: 25px; padding: 0 10px;">
-            <span style="font-size: 1.5em; color: #fd7e14; vertical-align: middle; margin-right: 10px;"></span> 
-            We connected with Mr. Dương Dũng Triều, Chairman of FPT Corporation, and asked to organize a learning session with him. This visit provided us with valuable knowledge about future careers and professional development in the technology sector. Below is a photo taken with the company's Chairman. 
-        </p>
-        
-        <!-- Khối ảnh xếp dọc -->
-        <div style="text-align: center;">
-            
-            <!-- Ảnh 1: FPT1.jpg (Ảnh với Chủ tịch) -->
-            <img class="zoomable-img" 
-                src="FPT1.jpg" 
-                onerror="this.onerror=null; this.src='https://placehold.co/700x400/6f42c1/ffffff?text=FPT+Chairman+Meeting';"
-                alt="Photo with Mr. Dương Dũng Triều, Chairman of FPT Corporation" 
-                loading="lazy" 
-                style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                onclick="openModal('FPT1.jpg')" />
-            
-            <!-- Ảnh 2: FPT2.jpg (Ảnh tập thể/tham quan) -->
-            <img class="zoomable-img" 
-                src="FPT2.jpg" 
-                onerror="this.onerror=null; this.src='https://placehold.co/700x400/6f42c1/ffffff?text=FPT+Educational+Tour';"
-                alt="Group photo during the educational tour at FPT" 
-                loading="lazy" 
-                style="width: 100%; height: auto; display: block; margin: 0 auto 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                onclick="openModal('FPT2.jpg')" />
-        </div>
-    </div>
-</li>
-          <li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
-    <!-- Khung bọc giới hạn chiều rộng cho toàn bộ nội dung của mục này -->
-    <div style="max-width: 700px; margin: 0 auto; padding: 0 10px;">
-        
-        <!-- Tiêu đề màu xanh lá cây đậm, to vừa, căn giữa -->
-        <h3 style="color: #0078d7; text-align: center; font-size: 1.8em; margin-bottom: 30px;">Visited Ernst & Young Vietnam's headquarters</h3>
-        
-        <!-- Mô tả với icon và font-weight (hoặc màu sắc) để làm nổi bật thành tích -->
-        <p style="font-size: 1.1em; line-height: 1.6; text-align: justify; margin-bottom: 25px; padding: 0 10px;">
-            <span style="font-size: 1.5em; color: #ffc107; vertical-align: middle; margin-right: 10px;"></span> 
-            We connected with the Chairman of EY Vietnam and organized an experiential tour of the firm's headquarters. This visit provided me with invaluable practical knowledge about the economy and financial matters. The opportunity to interact with industry leaders gave me a deep understanding of the professional world of auditing and consulting. Below is a photo with the Chairman.
-        </p>
-        
-        <!-- Khối ảnh xếp dọc -->
-        <div style="text-align: center;">
-            
-            <!-- Ảnh 1: EY1.jpg (Ảnh với Chủ tịch) -->
-            <img class="zoomable-img" 
-                src="EY1.jpg" 
-                onerror="this.onerror=null; this.src='https://placehold.co/700x400/00703c/ffffff?text=EY+Vietnam+Chairman+Meeting';"
-                alt="Photo with the Chairman of EY Vietnam" 
-                loading="lazy" 
-                style="width: 100%; height: auto; display: block; margin: 0 auto 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                onclick="openModal('EY1.jpg')" />
-        </div>
-    </div>
-</li>
-
-          <li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
-    <!-- Khung bọc giới hạn chiều rộng cho toàn bộ nội dung của mục này -->
-    <div style="max-width: 700px; margin: 0 auto; padding: 0 10px;">
-        
-        <!-- Tiêu đề màu xanh dương đậm, to vừa, căn giữa -->
-        <h3 style="color: #0078d7; text-align: center; font-size: 1.8em; margin-bottom: 30px;">An observational visit to explore Robotics competition in Shanghai, China.</h3>
-        
-        <!-- Mô tả với icon và font-weight (hoặc màu sắc) để làm nổi bật thành tích -->
-        <p style="font-size: 1.1em; line-height: 1.6; text-align: justify; margin-bottom: 25px; padding: 0 10px;">
-            <span style="font-size: 1.5em; color: #17a2b8; vertical-align: middle; margin-right: 10px;"></span> 
-         Despite having no time to join the STEM team because I was busy studying for the National Math Olympiad, my love for Math and STEM led me to sign up as an observer to experience a regional-scale competition held in China. The journey gave me many impressions and lessons, from observing the team's organization and task delegation to seeing the professionalism of international students in STEM. 
-        </p>
-        
-        <!-- Khối ảnh xếp dọc -->
-        <div style="text-align: center;">
-            
-            <!-- Ảnh 1: thuonghai1.jpg -->
-            <img class="zoomable-img" 
-                src="thuonghai1.jpg" 
-                onerror="this.onerror=null; this.src='https://placehold.co/700x400/007bff/ffffff?text=Robotics+Competition+Shanghai+1';"
-                alt="Photo from the Robotics competition in Shanghai" 
-                loading="lazy" 
-                style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                onclick="openModal('thuonghai1.jpg')" />
-            
-            <!-- Ảnh 2: thuonghai2.jpg -->
-            <img class="zoomable-img" 
-                src="thuonghai2.jpg" 
-                onerror="this.onerror=null; this.src='https://placehold.co/700x400/007bff/ffffff?text=Robotics+Competition+Shanghai+2';"
-                alt="Another view of the international Robotics event" 
-                loading="lazy" 
-                style="width: 100%; height: auto; display: block; margin: 0 auto 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                onclick="openModal('thuonghai2.jpg')" />
-        </div>
-    </div>
-</li>
-
-
-        <li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
-    <!-- Khung bọc giới hạn chiều rộng cho toàn bộ nội dung của mục này -->
-    <div style="max-width: 700px; margin: 0 auto; padding: 0 10px;">
-        
-        <!-- Tiêu đề màu xanh dương nhạt, to vừa, căn giữa -->
-        <h3 style="color: #0078d7; text-align: center; font-size: 1.8em; margin-bottom: 30px;">An observational tour of Vietnam Airlines' head office</h3>
-        
-        <!-- Mô tả với icon và font-weight (hoặc màu sắc) để làm nổi bật thành tích -->
-        <p style="font-size: 1.1em; line-height: 1.6; text-align: justify; margin-bottom: 25px; padding: 0 10px;">
-            <span style="font-size: 1.5em; color: #007bff; vertical-align: middle; margin-right: 10px;"></span> 
-            I had the unforgettable opportunity to experience and learn about aircraft operations and manufacturing processes during a tour of Vietnam Airlines' head office. This visit provided a wealth of valuable knowledge about the complex logistics and engineering aspects of the aviation industry. Additionally, I participated in a small Q&A competition about the firm's history and services and was proud to win the third prize, demonstrating my quick assimilation of new information.
-        </p>
-        
-        <!-- Khối ảnh xếp dọc -->
-        <div style="text-align: center;">
-            
-            <!-- Ảnh 1: maybay1.jpg -->
-            <img class="zoomable-img" 
-                src="maybay1.jpg" 
-                onerror="this.onerror=null; this.src='https://placehold.co/700x400/17a2b8/ffffff?text=Vietnam+Airlines+Tour+1';"
-                alt="Photo during the Vietnam Airlines head office tour" 
-                loading="lazy" 
-                style="width: 100%; height: auto; display: block; margin: 0 auto 15px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                onclick="openModal('maybay1.jpg')" />
-            
-            <!-- Ảnh 2: maybay2.jpg -->
-            <img class="zoomable-img" 
-                src="maybay2.jpg" 
-                onerror="this.onerror=null; this.src='https://placehold.co/700x400/17a2b8/ffffff?text=Vietnam+Airlines+Tour+2';"
-                alt="Inside view of aircraft facilities" 
-                loading="lazy" 
-                style="width: 100%; height: auto; display: block; margin: 0 auto 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                onclick="openModal('maybay2.jpg')" />
-        </div>
-    </div>
-</li>
-
-          <li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
-    <!-- Khung bọc giới hạn chiều rộng cho toàn bộ nội dung của mục này -->
-    <div style="max-width: 700px; margin: 0 auto; padding: 0 10px;">
-        
-        <!-- Tiêu đề màu xanh lá cây đậm (tương đồng với VinUni), to vừa, căn giữa -->
-        <h3 style="color: #0078d7; text-align: center; font-size: 1.8em; margin-bottom: 30px;">Participated in VinUniversity Open Day 2025</h3>
-        
-        <!-- Mô tả với icon và font-weight (hoặc màu sắc) để làm nổi bật thành tích -->
-        <p style="font-size: 1.1em; line-height: 1.6; text-align: justify; margin-bottom: 25px; padding: 0 10px;">
-            <span style="font-size: 1.5em; color: #00703c; vertical-align: middle; margin-right: 10px;"></span> 
-            The experience provided me with a comprehensive overview of my intended field of study and the future career opportunities it offers. I had a chance to attend the trial Data Science class, which gave me fundamental knowledge about data, forming a foundation for my future studies. This visit reaffirmed my passion for Math & Data Science and highlighted the importance of Data Science in comtemporary world.
-        
-        <!-- START: Phần 2 (Khối ảnh) sẽ được chèn vào đây -->
-        <div style="text-align: center;">
-            
-            <!-- Ảnh 1: vinuni.jpg -->
-            <img class="zoomable-img" 
-                src="vinuni.jpg" 
-                onerror="this.onerror=null; this.src='https://placehold.co/700x400/00703c/ffffff?text=VinUniversity+Open+Day';"
-                alt="Photo during the VinUniversity Open Day event" 
-                loading="lazy" 
-                style="width: 100%; height: auto; display: block; margin: 0 auto 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" 
-                onclick="openModal('vinuni.jpg')" />
-        </div>
-        <!-- END: Phần 2 (Khối ảnh) -->
-
-    </div>
-</li>
-          </ul>
-
-      </section>
-
-    
-      <section id="achievements">
-        <!-- TIÊU ĐỀ MỚI ĐƯỢC THÊM VÀO ĐÂY -->
-  <h2 class="section-title-red">Teaching experiences </span></h2>
-
-          <li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
-    <!-- Container to limit width for all content of this item -->
-    <div style="max-width: 700px; margin: 0 auto; padding: 0 10px;">
-        
-        <!-- Blue title, medium size, center aligned -->
-        <h3 style="color: #0078d7; text-align: center; font-size: 1.8em; margin-bottom: 15px;">Math and SAT Teaching Assistant at Educational Centers</h3>
-        
-        <!-- Black description text, justified alignment -->
-        <p style="color: #333; font-size: 1.1em; line-height: 1.6; margin-bottom: 20px; text-align: justify;">
-            After achieving success in various math competitions and the SAT exam, I decided to become a teaching assistant at educational centers, with the desire to share my passion and learning inspiration with other students. I worked at a math center from January to June 2025, and I am currently working as an SAT teaching assistant at a center in Vietnam. My goal has always been to approach teaching with enthusiasm, deliver easy-to-understand lessons, and help as many students as possible.
-        </p>
-
-        </li>
-
-          
-<h2 class="section-title-red" style="margin-top: 60px;">Writing book experience</h2>
-
-<li class="achievement-item" style="margin-top: 40px; border-bottom: 1px solid #ddd; padding-bottom: 30px;">
-    <div style="max-width: 700px; margin: 0 auto; padding: 0 10px;">
-        
-        <h3 style="color: #0078d7; text-align: center; font-size: 1.8em; margin-bottom: 15px;">Wrote a book about geometry</h3>
-        
-        <p style="color: #333; font-size: 1.1em; line-height: 1.6; margin-bottom: 20px; text-align: justify;">
-            Driven by my passion for geometry, I have written this book to explore key theorems and problems. My aim is to provide younger students with a stronger foundation and to introduce them to a diverse range of geometry problems.
-        </p>
-        
-        <!-- Book Preview Image -->
-        <div style="text-align: center; margin: 25px 0;">
-            <div style="display: inline-block; border: 1px solid #ddd; border-radius: 8px; padding: 10px; background-color: white; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
-                <img  class="zoomable-img"
-                    src="preview.jpg" 
-                     alt="Preview of Geometry Book - Một số bài toán hình học phẳng" 
-                     style="max-width: 100%; height: auto; border-radius: 6px;"
-                     onerror="this.onerror=null; this.src='https://via.placeholder.com/600x400/0078d7/ffffff?text=Book+Preview+Not+Found';">
-                <p style="color: #666; font-size: 0.9em; margin-top: 8px; font-style: italic;">
-                    Preview of "Một số bài toán hình học phẳng"
+        <!-- KHỐI TRIẾT LÝ SỐNG (Giữ tone xanh VinUni nhưng làm phẳng và hiện đại hơn) -->
+        <div class="achievement-card" style="background-color: #f0fdf4; border: 2px solid #22c55e; margin-bottom: 3rem;">
+            <h2 style="font-size: 1.8rem; color: #166534; text-align: center; margin-bottom: 20px; font-weight: 700;">
+                My Personal Philosophy on Experiences
+            </h2>
+            <div style="font-size: 1.1rem; line-height: 1.7; color: #15803d; text-align: justify; display: flex; flex-direction: column; gap: 15px;">
+                <p>Every experience has given me invaluable lessons. My charitable activities with the "Thắp Nắng" group are not merely an expression of our affection for less fortunate children and peers, but also made me realize that each of us must contribute our own small part to collectively build a better world. These actions also help us become more grateful for what we have. Whenever I face difficulties or pressure in my studies and life, I look back on these experiences and motivate myself for one simple reason: the life I have are the dream of countless other children who only wish for an ordinary life. Therefore, as I grew up, I do not easily give up upon challenges as I did before anymore.</p>
+                <p>Participating in sports activities not only improves my health but also helps me bond with a team and learn the essential skills needed to build a united, strong community that works towards a common goal.</p>
+                <p>Visits and experiential activities in academic and professional environments have given me broader perspectives on various careers, thereby helping me build a more solid foundation for my future career path.</p>
+                <p style="font-style: italic; font-weight: 700; color: #166534; text-align: center; margin-top: 10px; font-size: 1.15rem;">
+                    To me, every single experience is precious, and together, they will form the accumulated assets I carry on my journey to conquer the summits that lie ahead.
                 </p>
             </div>
         </div>
 
-        <!-- PDF Preview Section -->
-        <div style="margin-top: 30px; text-align: center;">
-            <h4 style="color: #555; margin-bottom: 15px;">Book Preview: <em>"Một số bài toán hình học phẳng"</em></h4>
-            
-            <!-- Option 1: Simple download link with nice styling -->
-            <div style="background: linear-gradient(135deg, #f0f8ff 0%, #e6f2ff 100%); padding: 25px; border-radius: 10px; border: 2px solid #0078d7; box-shadow: 0 4px 12px rgba(0,120,215,0.1);">
-                <div style="margin-bottom: 20px;">
-                    <div style="font-size: 3em; color: #0078d7; margin-bottom: 10px;">📚</div>
-                    <h4 style="color: #2c3e50; margin-bottom: 10px;">Một số bài toán hình học phẳng</h4>
-                    <p style="color: #555; font-style: italic; margin-bottom: 5px;">by Ngô Quý Dương</p>
-                    </p>
-                </div>
-                
-                <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 20px;">
-                    <!-- Download Button -->
-                    <a href="Một_số_bài_toán_hình_học_phẳng_Ngô_Quý_Dương.pdf" 
-                       style="display: inline-flex; align-items: center; background-color: #0078d7; color: white; padding: 12px 25px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 1.1em; transition: all 0.3s ease;"
-                       onmouseover="this.style.backgroundColor='#005fa3'; this.style.transform='translateY(-2px)';"
-                       onmouseout="this.style.backgroundColor='#0078d7'; this.style.transform='translateY(0)';"
-                       download>
-                       <span style="margin-right: 8px;">⬇️</span> Download PDF
-                    </a>
-                    
-                    <!-- Optional: View Online Button -->
-                    <a href="Một_số_bài_toán_hình_học_phẳng_Ngô_Quý_Dương.pdf" 
-                       target="_blank"
-                       style="display: inline-flex; align-items: center; background-color: white; color: #0078d7; padding: 12px 25px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 1.1em; border: 2px solid #0078d7; transition: all 0.3s ease;"
-                       onmouseover="this.style.backgroundColor='#f0f8ff'; this.style.transform='translateY(-2px)';"
-                       onmouseout="this.style.backgroundColor='white'; this.style.transform='translateY(0)';">
-                       <span style="margin-right: 8px;">👁️</span> View Online
-                    </a>
-                </div>
-                
-
-            
-            <!-- Option 2: If you want to embed PDF preview (uncomment if needed) -->
-            <!--
-            <div style="margin-top: 30px;">
-                <h5 style="color: #555; margin-bottom: 10px;">Preview:</h5>
-                <iframe 
-                    src="Một_số_bài_toán_hình_học_phẳng_Ngô_Quý_Dương.pdf#view=FitH&toolbar=0&navpanes=0" 
-                    width="100%" 
-                    height="500px" 
-                    style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"
-                    title="Geometry Book Preview"
-                >
-                    <p>Your browser doesn't support PDF preview. 
-                       <a href="Một_số_bài_toán_hình_học_phẳng_Ngô_Quý_Dương.pdf">Download the PDF</a>
-                    </p>
-                </iframe>
-            </div>
-            -->
-        </div>
-    </div>
-</li>
-
-          
-          <!-- CẤU TRÚC MODAL (LIGHTBOX) VÀ SCRIPT ĐÃ ĐƯỢC CHUYỂN VÀO CUỐI BODY -->
-<!-- Cấu trúc Modal (Lightbox) -->
-<div id="imageModal" class="modal-overlay" onclick="closeModal()">
-    <!-- Nút đóng -->
-    <span class="close-btn" onclick="closeModal(event)">&times;</span>
-    <!-- Ảnh sẽ được hiển thị ở đây -->
-    <img class="modal-content" id="img01">
-</div>
-
-<script>
-    // Lấy Modal và các phần tử
-    const modal = document.getElementById("imageModal");
-    const modalImg = document.getElementById("img01");
-
-    // Hàm mở Modal
-    function openModal(imageSrc) {
-        modal.style.display = "flex"; // Hiển thị Modal (dùng flex để căn giữa)
-        modalImg.src = imageSrc;      // Thiết lập nguồn ảnh
-    }
-
-    // Hàm đóng Modal
-    function closeModal(event) {
-        // Kiểm tra nếu click vào nút đóng (x) hoặc lớp phủ nền (modal-overlay)
-        // Nếu click vào ảnh (modalImg) thì không đóng
-        if (!event || event.target === modal || event.target.classList.contains('close-btn')) {
-             modal.style.display = "none";
-        }
-    }
-
-    // Gắn sự kiện click cho tất cả ảnh có class 'zoomable-img'
-    document.addEventListener('DOMContentLoaded', () => {
-        const images = document.querySelectorAll('.zoomable-img');
-        images.forEach(img => {
-            img.style.cursor = 'pointer'; // Thêm hiệu ứng chuột
-            img.addEventListener('click', () => {
-                openModal(img.src);
-            });
-        });
-    });
-</script>
-
+        <!-- ================= CHARITY GROUP ================= -->
+        <h2 class="red-heading" style="justify-content: center; margin-top: 4rem;">CO-FOUNDER OF THE CHARITY GROUP "THAP NANG"</h2>
         
-<footer id="contact-footer" style="width: 100%; background-color: #f8f9fa; padding: 20px 0; margin-top: 40px;">
-    <!-- XÓA div .footer-content-wrapper hoặc thêm style width: 100% -->
-    <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        <!-- Giới thiệu nhóm -->
+        <div class="achievement-card" style="margin-bottom: 2.5rem;">
+            <h3 class="achievement-title">About "Thap Nang" (Thắp Nắng)</h3>
+            <p class="achievement-desc" style="text-align: justify;">The charity group "Thap Nang" was founded in January 2024 by a group of former primary school classmates from different high schools in Hanoi. We came together with the shared goal of spreading love and supporting underprivileged communities across Vietnam. After nearly two years of operation, we have successfully organized several charitable trips to various provinces throughout the Vietnam.</p>
+            <h4 style="font-size: 1.2rem; font-weight: 600; color: #1e293b; margin: 1.5rem 0 0.5rem; text-align: center;">Our Mission and Activities</h4>
+            <p class="achievement-desc" style="text-align: justify;">Our main activity involves the sale of Chóa village (Bắc Ninh) traditional incense products. All profits are used to fund our charity trips. We chose this product not only for its health benefits as a clean, natural incense, but also to help preserve the traditional incense-making craft of Chóa Village in Bắc Ninh.</p>
+            <div class="achievement-gallery">
+                <img class="zoomable-img" src="thapnang.jpg" alt="Thap Nang Charity Group Photo">
+            </div>
+        </div>
+
+        <div class="achievements-list">
+            <!-- Chóa Village -->
+            <div class="achievement-card">
+                <h3 class="achievement-title">Visited Chóa village, Bắc Ninh</h3>
+                <p class="achievement-desc" style="text-align: justify;">Our field trip to Chóa Village in Bắc Ninh was truly unforgettable. We visited to learn about the traditional process of making their famous black incense and had an opportunity to try making it ourselves. This valuable experience helped us appreciate this tradition of Chóa Village. Moreover, by using only natural ingredients and no chemicals, the village contributes to protecting consumers' health.</p>
+                <div class="achievement-gallery">
+                    <img class="zoomable-img" src="langchoa1.jpg" alt="Thap Nang members visiting Chóa Village, Bac Ninh">
+                    <img class="zoomable-img" src="langchoa2.jpg" alt="Traditional black incense making in Chóa Village">
+                </div>
+            </div>
+
+            <!-- Incense Sale -->
+            <div class="achievement-card">
+                <h3 class="achievement-title">Organized an in-school sale of black incense</h3>
+                <p class="achievement-desc" style="text-align: justify;">Our charity group organized an in-school sale of traditional black incense. We sourced the product directly from Chóa Village in Bắc Ninh. We leveraged a major event at Newton School, timing the sale with the Lunar New Year when demand rises significantly among Vietnamese families. Moreover, all profits generated were dedicated to charitable activities, with the aim of helping the disadvantaged people in Vietnam.</p>
+                <div class="achievement-gallery">
+                    <img class="zoomable-img" src="banhuong1.jpg" onerror="this.onerror=null; this.src='https://placehold.co/700x400/9a6324/ffffff?text=Incense+Sale+Project';" alt="Photo of the incense sale initiative">
+                </div>
+            </div>
+
+            <!-- Hematology Institute -->
+            <div class="achievement-card">
+                <h3 class="achievement-title">Charity visit to the National Institute of Hematology and Blood Transfusion</h3>
+                <p class="achievement-desc" style="text-align: justify;">We organized a meaningful charity visit to the National Institute of Hematology and Blood Transfusion to support pediatric patients undergoing long-term treatment. The team prepared gifts, small financial aid, and interactive activities aimed at bringing cheer and motivation to the children and their families. This activity is not only aimed at making a small contribution to support less fortunate children, but through it, our group also became more aware of the importance of health and felt truly fortunate to be able to study and live normally.</p>
+                <div class="achievement-gallery">
+                    <img class="zoomable-img" src="vienhuyethoc.jpg" alt="Volunteers and patients during the charity visit at the National Institute of Hematology">
+                </div>
+            </div>
+
+            <!-- Children's Hospital -->
+            <div class="achievement-card">
+                <h3 class="achievement-title">Charity visit to the National Children's Hospital</h3>
+                <p class="achievement-desc" style="text-align: justify;">Born healthy and privileged to receive the best education, our group always focuses on children—not only because they are at an age we have just experienced ourselves, but also because they represent the future of our country. Sharing a part of our fortune with them is not only an act of compassion but also a reflection of the younger generation’s responsibility toward the more vulnerable in society.</p>
+                <div class="achievement-gallery">
+                    <img class="zoomable-img" src="viennhi1.jpg" alt="Volunteers giving gifts to children at the hospital">
+                    <img class="zoomable-img" src="viennhi2.jpg" alt="Interactive activities with pediatric patients">
+                    <img class="zoomable-img" src="viennhi3.jpg" alt="Team photo with the hospital staff and children">
+                    <img class="zoomable-img" src="viennhi4.jpg" alt="Team photo with the hospital staff and children">
+                </div>
+            </div>
+
+            <!-- Sao Mai Care Center -->
+            <div class="achievement-card">
+                <h3 class="achievement-title">Charity visit to Sao Mai Care Center in Vĩnh Phúc Province</h3>
+                <p class="achievement-desc" style="text-align: justify;">After successfully organizing charity trips in Hanoi, we decided to expand our reach to neighboring provinces. Our visit to the Sao Mai Care Center in Vĩnh Phúc was a meaningful experience. We brought small gifts with the hope of supporting the orphaned children living there. Besides, we collaborated with several other projects to introduce the children to robotics and Rubik's cubes. This aimed to provide them with access to new experiences and inspire curiosity.</p>
+                <div class="achievement-gallery">
+                    <img class="zoomable-img" src="saomai.jpg" alt="Volunteers and children posing with gifts at Sao Mai Center">
+                    <img class="zoomable-img" src="saomai2.jpg" alt="Children participating in robotics and Rubik's cube workshops">
+                    <img class="zoomable-img" src="haiduong3.jpg" alt="Activity session with the children and elderly at the center">
+                </div>
+            </div>
+
+            <!-- Hải Dương -->
+            <div class="achievement-card">
+                <h3 class="achievement-title">Charity visit to the Social Protection Center of Hải Dương Province</h3>
+                <div class="achievement-gallery">
+                    <img class="zoomable-img" src="haiduong1.jpg" alt="Volunteers interacting with residents at Hải Dương Social Protection Center">
+                    <img class="zoomable-img" src="haiduong2.jpg" alt="Group photo with the center's staff and residents">
+                    <img class="zoomable-img" src="camonhaiduong.jpg" onerror="this.onerror=null; this.src='https://placehold.co/700x400/1e8449/ffffff?text=Tu+Thien+Hai+Duong';" alt="Hình ảnh hoạt động từ thiện tại Hải Dương">
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= SPORTS ACTIVITIES ================= -->
+        <h2 class="red-heading" style="justify-content: center; margin-top: 5rem;">SPORTS ACTIVITIES</h2>
+        
+        <div class="achievements-list">
+            <!-- Football -->
+            <div class="achievement-card">
+                <h3 class="achievement-title">Participated in football tournaments from primary school to high school</h3>
+                <p class="achievement-desc" style="text-align: justify;">I have developed a great passion for football since I was very young and have been a key player in my class team. Over the years, I have earned several achievements, including three consecutive school championships in lower secondary school, followed by a third-place finish in 10th grade and a second-place finish in 11th grade.</p>
+                <div class="achievement-gallery">
+                    <img class="zoomable-img" src="bongda1.jpg" alt="Football team celebrating a victory">
+                    <img class="zoomable-img" src="bongda2.jpg" alt="Action shot during a high school football match">
+                    <img class="zoomable-img" src="bongda3.jpg" alt="Football team group photo after tournament">
+                </div>
+            </div>
+
+            <!-- Run For Love -->
+            <div class="achievement-card">
+                <h3 class="achievement-title">Participated in the community run "Vietnam Airlines Run For Love 2025"</h3>
+                <p class="achievement-desc" style="text-align: justify;">Participating in this race not only helps improve health but also contributes a small amount of funding to support People with Disabilities.</p>
+                <div class="achievement-gallery">
+                    <img class="zoomable-img" src="VNA.jpg" onerror="this.onerror=null; this.src='https://placehold.co/700x400/E53E3E/ffffff?text=Run+For+Love+1';" alt="Run For Love 2025 event">
+                    <img class="zoomable-img" src="VNA2.jpg" onerror="this.onerror=null; this.src='https://placehold.co/700x400/E53E3E/ffffff?text=Run+For+Love+2';" alt="Runner taking part in the charity run">
+                    <img class="zoomable-img" src="VNA3.jpg" onerror="this.onerror=null; this.src='https://placehold.co/700x400/E53E3E/ffffff?text=Run+For+Love+3';" alt="Group photo at the finish line">
+                    <img class="zoomable-img" src="runforlove.jpg" onerror="this.onerror=null; this.src='https://placehold.co/700x400/c00/ffffff?text=VNA+Run+For+Love';" alt="Photo from the VNA Run For Love event">
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= OTHER ACTIVITIES ================= -->
+        <h2 class="red-heading" style="justify-content: center; margin-top: 5rem;">OTHER ACTIVITIES</h2>
+        
+        <div class="achievements-list">
+            <!-- VTV -->
+            <div class="achievement-card">
+                <h3 class="achievement-title">Competed in the "Super Mental Calculation" contest organized by VTV (Grade 5)</h3>
+                <p class="achievement-desc" style="text-align: justify;">Participating in VTV's "Super Mental Math" intellectual contest was a memorable experience, highlighted by a spectacular comeback in the final round. It was the first time I had ever been on a TV show.</p>
+                <div class="achievement-gallery">
+                    <img class="zoomable-img" src="sieutinhnham1.jpg" onerror="this.onerror=null; this.src='https://placehold.co/700x400/FF9800/ffffff?text=VTV+Contest+1';" alt="Contestant performing mental calculation">
+                    <img class="zoomable-img" src="sieutinhnham2.jpg" onerror="this.onerror=null; this.src='https://placehold.co/700x400/FF9800/ffffff?text=VTV+Contest+2';" alt="Receiving certificate or award at the contest">
+                </div>
+            </div>
+
+            <!-- Nam Dinh Robotics -->
+            <div class="achievement-card">
+                <h3 class="achievement-title">Volunteered to support a charity event organized by Newton Robotics Club in Nam Định</h3>
+                <p class="achievement-desc" style="text-align: justify;">We organized this event with the goal of bringing robotics to children in Nam Định province. Witnessing their excitement when being introduced to such a novel field was a joyful and memorable experience for me. This initiative highlighted the importance of community outreach and using technology as a tool for inspiring the next generation.</p>
+                <div class="achievement-gallery">
+                    <img class="zoomable-img" src="namdinh3.jpg" onerror="this.onerror=null; this.src='https://placehold.co/700x400/28a745/ffffff?text=Nam+Dinh+Robotics+1';" alt="Volunteering with children in Nam Dinh">
+                    <img class="zoomable-img" src="namdinh2.jpg" onerror="this.onerror=null; this.src='https://placehold.co/700x400/28a745/ffffff?text=Nam+Dinh+Robotics+2';" alt="Introducing robotics to local children">
+                    <img class="zoomable-img" src="namdinh1.jpg" onerror="this.onerror=null; this.src='https://placehold.co/700x400/28a745/ffffff?text=Nam+Dinh+Robotics+3';" alt="Group photo at the charity event">
+                </div>
+            </div>
+
+            <!-- FPT -->
+            <div class="achievement-card">
+                <h3 class="achievement-title">An educational tour and learning experience at FPT Company</h3>
+                <p class="achievement-desc" style="text-align: justify;">We connected with Mr. Dương Dũng Triều, Chairman of FPT Corporation, and asked to organize a learning session with him. This visit provided us with valuable knowledge about future careers and professional development in the technology sector. Below is a photo taken with the company's Chairman.</p>
+                <div class="achievement-gallery">
+                    <img class="zoomable-img" src="FPT1.jpg" onerror="this.onerror=null; this.src='https://placehold.co/700x400/6f42c1/ffffff?text=FPT+Chairman+Meeting';" alt="Photo with Mr. Dương Dũng Triều, Chairman of FPT Corporation">
+                    <img class="zoomable-img" src="FPT2.jpg" onerror="this.onerror=null; this.src='https://placehold.co/700x400/6f42c1/ffffff?text=FPT+Educational+Tour';" alt="Group photo during the educational tour at FPT">
+                </div>
+            </div>
+
+            <!-- Ernst & Young -->
+            <div class="achievement-card">
+                <h3 class="achievement-title">Visited Ernst & Young Vietnam's headquarters</h3>
+                <p class="achievement-desc" style="text-align: justify;">We connected with the Chairman of EY Vietnam and organized an experiential tour of the firm's headquarters. This visit provided me with invaluable practical knowledge about the economy and financial matters. The opportunity to interact with industry leaders gave me a deep understanding of the professional world of auditing and consulting. Below is a photo with the Chairman.</p>
+                <div class="achievement-gallery">
+                    <img class="zoomable-img" src="EY1.jpg" onerror="this.onerror=null; this.src='https://placehold.co/700x400/00703c/ffffff?text=EY+Vietnam+Chairman+Meeting';" alt="Photo with the Chairman of EY Vietnam">
+                </div>
+            </div>
+
+            <!-- Shanghai -->
+            <div class="achievement-card">
+                <h3 class="achievement-title">An observational visit to explore Robotics competition in Shanghai, China</h3>
+                <p class="achievement-desc" style="text-align: justify;">Despite having no time to join the STEM team because I was busy studying for the National Math Olympiad, my love for Math and STEM led me to sign up as an observer to experience a regional-scale competition held in China. The journey gave me many impressions and lessons, from observing the team's organization and task delegation to seeing the professionalism of international students in STEM.</p>
+                <div class="achievement-gallery">
+                    <img class="zoomable-img" src="thuonghai1.jpg" onerror="this.onerror=null; this.src='https://placehold.co/700x400/007bff/ffffff?text=Robotics+Competition+Shanghai+1';" alt="Photo from the Robotics competition in Shanghai">
+                    <img class="zoomable-img" src="thuonghai2.jpg" onerror="this.onerror=null; this.src='https://placehold.co/700x400/007bff/ffffff?text=Robotics+Competition+Shanghai+2';" alt="Another view of the international Robotics event">
+                </div>
+            </div>
+
+            <!-- Vietnam Airlines -->
+            <div class="achievement-card">
+                <h3 class="achievement-title">An observational tour of Vietnam Airlines' head office</h3>
+                <p class="achievement-desc" style="text-align: justify;">I had the unforgettable opportunity to experience and learn about aircraft operations and manufacturing processes during a tour of Vietnam Airlines' head office. This visit provided a wealth of valuable knowledge about the complex logistics and engineering aspects of the aviation industry. Additionally, I participated in a small Q&A competition about the firm's history and services and was proud to win the third prize, demonstrating my quick assimilation of new information.</p>
+                <div class="achievement-gallery">
+                    <img class="zoomable-img" src="maybay1.jpg" onerror="this.onerror=null; this.src='https://placehold.co/700x400/17a2b8/ffffff?text=Vietnam+Airlines+Tour+1';" alt="Photo during the Vietnam Airlines head office tour">
+                    <img class="zoomable-img" src="maybay2.jpg" onerror="this.onerror=null; this.src='https://placehold.co/700x400/17a2b8/ffffff?text=Vietnam+Airlines+Tour+2';" alt="Inside view of aircraft facilities">
+                </div>
+            </div>
+
+            <!-- VinUni -->
+            <div class="achievement-card">
+                <h3 class="achievement-title">Participated in VinUniversity Open Day 2025</h3>
+                <p class="achievement-desc" style="text-align: justify;">The experience provided me with a comprehensive overview of my intended field of study and the future career opportunities it offers. I had a chance to attend the trial Data Science class, which gave me fundamental knowledge about data, forming a foundation for my future studies. This visit reaffirmed my passion for Math & Data Science and highlighted the importance of Data Science in comtemporary world.</p>
+                <div class="achievement-gallery">
+                    <img class="zoomable-img" src="vinuni.jpg" onerror="this.onerror=null; this.src='https://placehold.co/700x400/00703c/ffffff?text=VinUniversity+Open+Day';" alt="Photo during the VinUniversity Open Day event">
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= TEACHING EXPERIENCES ================= -->
+        <h2 class="red-heading" style="justify-content: center; margin-top: 5rem;">TEACHING EXPERIENCES</h2>
+        <div class="achievements-list">
+            <div class="achievement-card">
+                <h3 class="achievement-title">Math and SAT Teaching Assistant at Educational Centers</h3>
+                <p class="achievement-desc" style="text-align: justify;">After achieving success in various math competitions and the SAT exam, I decided to become a teaching assistant at educational centers, with the desire to share my passion and learning inspiration with other students. I worked at a math center from January to June 2025, and I am currently working as an SAT teaching assistant at a center in Vietnam. My goal has always been to approach teaching with enthusiasm, deliver easy-to-understand lessons, and help as many students as possible.</p>
+            </div>
+        </div>
+
+        <!-- ================= WRITING BOOK EXPERIENCE ================= -->
+        <h2 class="red-heading" style="justify-content: center; margin-top: 5rem;">WRITING BOOK EXPERIENCE</h2>
+        <div class="achievements-list">
+            <div class="achievement-card">
+                <h3 class="achievement-title">Wrote a book about geometry</h3>
+                <p class="achievement-desc" style="text-align: justify;">Driven by my passion for geometry, I have written this book to explore key theorems and problems. My aim is to provide younger students with a stronger foundation and to introduce them to a diverse range of geometry problems.</p>
+                
+                <div style="text-align: center; margin: 25px 0;">
+                    <img class="zoomable-img" src="preview.jpg" alt="Preview of Geometry Book - Một số bài toán hình học phẳng" style="max-height: 400px; border: 1px solid #e2e8f0; padding: 10px; background: white;" onerror="this.onerror=null; this.src='https://via.placeholder.com/600x400/0078d7/ffffff?text=Book+Preview+Not+Found';">
+                    <p style="color: #64748b; font-size: 0.95rem; margin-top: 10px; font-style: italic;">Preview of "Một số bài toán hình học phẳng"</p>
+                </div>
+
+                <!-- Box Tải PDF được design đồng bộ -->
+                <div style="background: #f8fafc; padding: 2rem; border-radius: 16px; border: 1px solid #e2e8f0; text-align: center; margin-top: 2rem;">
+                    <div style="font-size: 3rem; margin-bottom: 10px;">📚</div>
+                    <h4 style="color: #0f172a; font-size: 1.5rem; font-weight: 700; margin-bottom: 5px;">Một số bài toán hình học phẳng</h4>
+                    <p style="color: #64748b; font-style: italic; margin-bottom: 1.5rem;">by Ngô Quý Dương</p>
+                    
+                    <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                        <a href="Một_số_bài_toán_hình_học_phẳng_Ngô_Quý_Dương.pdf" download style="background: #0284c7; color: white; padding: 12px 28px; border-radius: 99px; font-weight: 600; text-decoration: none; transition: all 0.3s; display: inline-flex; align-items: center; gap: 8px;">
+                            <span>⬇️</span> Download PDF
+                        </a>
+                        <a href="Một_số_bài_toán_hình_học_phẳng_Ngô_Quý_Dương.pdf" target="_blank" style="background: white; color: #0284c7; border: 2px solid #0284c7; padding: 10px 28px; border-radius: 99px; font-weight: 600; text-decoration: none; transition: all 0.3s; display: inline-flex; align-items: center; gap: 8px;">
+                            <span>👁️</span> View Online
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contact-footer">
         <div class="contact-info">
-            <p><strong>Contact me</strong></p>
+            <p>Contact me</p>
             <p>📧 Email: <a href="mailto:duongngoquy2008@gmail.com">duongngoquy2008@gmail.com</a></p>
             <p>📱 Phone: <a href="tel:+84766692908">+84 766692908</a></p>
         </div>
         <div class="copyright">
             <p>&copy; 2025 Ngô Quý Dương. All rights reserved.</p>
         </div>
+    </footer>
+
+    <!-- MODAL ẢNH ZOOM -->
+    <div id="imageModal" class="modal-overlay" onclick="closeModal(event)">
+        <span class="close-btn" onclick="closeModal(event)">&times;</span>
+        <img class="modal-content" id="img01">
     </div>
-</footer>
+
+    <script>
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("img01");
+
+        function openModal(imageSrc) {
+            modal.style.display = "flex"; 
+            modalImg.src = imageSrc;      
+        }
+
+        function closeModal(event) {
+            if (!event || event.target === modal || event.target.classList.contains('close-btn')) {
+                 modal.style.display = "none";
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const images = document.querySelectorAll('.zoomable-img');
+            images.forEach(img => {
+                img.addEventListener('click', () => {
+                    openModal(img.src);
+                });
+            });
+        });
+    </script>
 </body>
-</html>
-    </body>
 </html>
