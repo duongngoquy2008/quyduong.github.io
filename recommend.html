@@ -1,116 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Recommendation letters</title>
-
+    <title>Recommendation letters | Ngô Quý Dương</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> 
-
 </head>
-
 <body>
-<header>
-    <div class="header-content">
-        <img src="bigdata.jpg" alt="Big Data Icon" class="header-icon left-icon">
-        <div class="header-text">
-            <h1>Ngô Quý Dương</h1>
-            <p>Student | Math & Data Science Enthusiast | Future Innovator</p>
+    <!-- HEADER ĐỒNG BỘ -->
+    <header>
+        <div class="header-content">
+            <img src="bigdata.jpg" alt="Big Data Icon" class="header-icon left-icon">
+            <div class="header-text">
+                <h1>Ngô Quý Dương</h1>
+                <p>Student | Math & Data Science Enthusiast | Future Innovator</p>
+            </div>
+            <img src="advancedmath.jpg" alt="Advanced Math Icon" class="header-icon right-icon">
         </div>
-        <img src="advancedmath.jpg" alt="Advanced Math Icon" class="header-icon right-icon">
-    </div>
-</header>
+    </header>
 
-<nav>
-    <a href="index.html">About me</a>
-    <a href="achievements.html">Academic awards and achievements</a>
-    <a href="projects.html">Activities and experiences</a>
-    <a href="recommend.html">Recommendation letters</a>
-</nav>
+    <!-- THANH ĐIỀU HƯỚNG -->
+    <nav>
+        <a href="index.html">About me</a>
+        <a href="achievements.html">Academic awards and achievements</a>
+        <a href="projects.html">Activities and experiences</a>
+        <a href="recommend.html">Recommendation letters</a>
+    </nav>
 
-<!-- THÊM SECTION CONTAINER GIỐNG NHƯ ACHIEVEMENTS -->
-<section id="recommendation" style="margin-top: 20px;">
-    <!-- TIÊU ĐỀ SECTION -->
-    <h2 class="section-title-red">Recommendation Letters</h2>
-    
-    <!-- NỘI DUNG RECOMMENDATION -->
-    <li class="achievement-item" style="margin-top: 40px;">
-        <h3 style="color: #0078d7; text-align: center; font-size: 1.8em; margin-bottom: 10px;">
-            Principal's Recommendation Letter
-        </h3>
-        <div style="text-align: center;">
-            <img class="zoomable-img" src="coman.jpg" alt="Principal's Recommendation Letter" 
-                 style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
-        </div>
-    </li>
-        <li class="achievement-item" style="margin-top: 40px;">
-        <h3 style="color: #0078d7; text-align: center; font-size: 1.8em; margin-bottom: 10px;">
-            Homeroom teacher's Recommendation Letter
-        </h3>
-        <div style="text-align: center;">
-            <img class="zoomable-img" src="thayhau.jpg" alt="Homeroom teacher's Recommendation Letter" 
-                 style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
-        </div>
-    </li>
-        <li class="achievement-item" style="margin-top: 40px;">
-        <h3 style="color: #0078d7; text-align: center; font-size: 1.8em; margin-bottom: 10px;">
-            Informatics teacher's Recommendation Letter
-        </h3>
-        <div style="text-align: center;">
-            <img class="zoomable-img" src="thaykhoi.jpg" alt="Informatics teacher's Recommendation Letter" 
-                 style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
-        </div>
-    </li>
-</section>
+    <!-- NỘI DUNG CHÍNH -->
+    <main id="achievements-page">
+        <h2 class="red-heading" style="justify-content: center;">Recommendation Letters</h2>
+        
+        <div class="achievements-list">
+            
+            <!-- Thư của Hiệu trưởng -->
+            <div class="achievement-card">
+                <h3 class="achievement-title">Principal's Recommendation Letter</h3>
+                <div class="achievement-gallery">
+                    <!-- Thêm inline style để thư dài hiển thị to hơn ảnh bình thường một chút -->
+                    <img class="zoomable-img" src="coman.jpg" alt="Principal's Recommendation Letter" style="max-height: 450px;">
+                </div>
+            </div>
+            
+            <!-- Thư của GV Chủ nhiệm -->
+            <div class="achievement-card">
+                <h3 class="achievement-title">Homeroom teacher's Recommendation Letter</h3>
+                <div class="achievement-gallery">
+                    <img class="zoomable-img" src="thayhau.jpg" alt="Homeroom teacher's Recommendation Letter" style="max-height: 450px;">
+                </div>
+            </div>
+            
+            <!-- Thư của GV Tin học -->
+            <div class="achievement-card">
+                <h3 class="achievement-title">Informatics teacher's Recommendation Letter</h3>
+                <div class="achievement-gallery">
+                    <img class="zoomable-img" src="thaykhoi.jpg" alt="Informatics teacher's Recommendation Letter" style="max-height: 450px;">
+                </div>
+            </div>
 
-<footer id="contact-footer">
-    <div class="footer-content-wrapper"> 
+        </div>
+    </main>
+
+    <!-- FOOTER ĐỒNG BỘ -->
+    <footer id="contact-footer">
         <div class="contact-info">
-            <p><strong>Contact me</strong></p>
+            <p>Contact me</p>
             <p>📧 Email: <a href="mailto:duongngoquy2008@gmail.com">duongngoquy2008@gmail.com</a></p>
             <p>📱 Phone: <a href="tel:+84766692908">+84 766692908</a></p>
         </div>
         <div class="copyright">
             <p>&copy; 2025 Ngô Quý Dương. All rights reserved.</p>
         </div>
+    </footer>
+
+    <!-- MODAL ĐỂ ZOOM ẢNH LÊN ĐỌC CHỮ -->
+    <div id="imageModal" class="modal-overlay" onclick="closeModal(event)">
+        <span class="close-btn" onclick="closeModal(event)">&times;</span>
+        <img class="modal-content" id="img01">
     </div>
-</footer>
 
-<!-- MODAL SCRIPT (nếu cần) -->
-<div id="imageModal" class="modal-overlay" onclick="closeModal()">
-    <span class="close-btn" onclick="closeModal(event)">&times;</span>
-    <img class="modal-content" id="img01">
-</div>
+    <script>
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("img01");
 
-<script>
-    // Script cho modal (giống achievements.html)
-    const modal = document.getElementById("imageModal");
-    const modalImg = document.getElementById("img01");
-
-    function openModal(imageSrc) {
-        modal.style.display = "flex";
-        modalImg.src = imageSrc;
-    }
-
-    function closeModal(event) {
-        if (!event || event.target === modal || event.target.classList.contains('close-btn')) {
-            modal.style.display = "none";
+        function openModal(imageSrc) {
+            modal.style.display = "flex";
+            modalImg.src = imageSrc;
         }
-    }
 
-    document.addEventListener('DOMContentLoaded', () => {
-        const images = document.querySelectorAll('.zoomable-img');
-        images.forEach(img => {
-            img.style.cursor = 'pointer';
-            img.addEventListener('click', () => {
-                openModal(img.src);
+        function closeModal(event) {
+            if (!event || event.target === modal || event.target.classList.contains('close-btn')) {
+                modal.style.display = "none";
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const images = document.querySelectorAll('.zoomable-img');
+            images.forEach(img => {
+                img.addEventListener('click', () => {
+                    openModal(img.src);
+                });
             });
         });
-    });
-</script>
-
+    </script>
 </body>
 </html>
